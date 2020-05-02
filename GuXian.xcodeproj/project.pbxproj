@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D88FD47F758DB1D7060FEDB /* libPods-GuXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */; };
+		69ADB25E245D186B0019B31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB25C245D186B0019B31E /* Main.storyboard */; };
+		69ADB260245D186C0019B31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB25F245D186C0019B31E /* Assets.xcassets */; };
+		69ADB263245D186C0019B31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB261245D186C0019B31E /* LaunchScreen.storyboard */; };
+		69ADB27E245D1D600019B31E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB27D245D1D600019B31E /* DataManager.m */; };
+		69ADB281245D1E1F0019B31E /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB280245D1E1F0019B31E /* UserInfo.m */; };
+		69ADB287245D283F0019B31E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB285245D283F0019B31E /* LoginController.m */; };
+		69ADB288245D283F0019B31E /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB286245D283F0019B31E /* LoginController.xib */; };
+		69ADB28F245D2F900019B31E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB28E245D2F900019B31E /* BaseController.m */; };
+		69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2B8245D3AD00019B31E /* DeviceManager.m */; };
+		69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2BB245D3E570019B31E /* NSString+Extend.m */; };
+		69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2C1245D3F870019B31E /* UIView+Toast.m */; };
+		69ADB2D4245D5E4D0019B31E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CD245D5E4D0019B31E /* BaseNavigationController.m */; };
+		69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CE245D5E4D0019B31E /* ViewController.m */; };
+		69ADB2D6245D5E4D0019B31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CF245D5E4D0019B31E /* main.m */; };
+		69ADB2D7245D5E4D0019B31E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2D0245D5E4D0019B31E /* AppDelegate.m */; };
+		69ADB2D8245D5E4D0019B31E /* MainTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2D2245D5E4D0019B31E /* MainTarBarController.m */; };
+		69ADB2DB245D62700019B31E /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2DA245D62700019B31E /* UIImage+Extend.m */; };
+		69ADB2E5245D67570019B31E /* FindJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2E3245D67570019B31E /* FindJobController.m */; };
+		69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB2E4245D67570019B31E /* FindJobController.xib */; };
+		69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F3245D75EB0019B31E /* UITableView+PlaceHoldView.m */; };
+		69ADB2F6245D75EB0019B31E /* PlaceHoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F4245D75EB0019B31E /* PlaceHoldView.m */; };
+		69ADB2FB245D77B40019B31E /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F9245D77B40019B31E /* JobCell.m */; };
+		69ADB2FC245D77B40019B31E /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB2FA245D77B40019B31E /* JobCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B69E7EDDA091A0BD84F47A3 /* Pods-GuXian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuXian.release.xcconfig"; path = "Target Support Files/Pods-GuXian/Pods-GuXian.release.xcconfig"; sourceTree = "<group>"; };
+		69ADB250245D186B0019B31E /* GuXian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuXian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69ADB25D245D186B0019B31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69ADB25F245D186C0019B31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69ADB262245D186C0019B31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69ADB264245D186C0019B31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69ADB27C245D1D600019B31E /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		69ADB27D245D1D600019B31E /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		69ADB27F245D1E1F0019B31E /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		69ADB280245D1E1F0019B31E /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		69ADB282245D200B0019B31E /* CommonHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHead.h; sourceTree = "<group>"; };
+		69ADB284245D283F0019B31E /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		69ADB285245D283F0019B31E /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		69ADB286245D283F0019B31E /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		69ADB28D245D2F900019B31E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		69ADB28E245D2F900019B31E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		69ADB2B7245D3AD00019B31E /* DeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		69ADB2B8245D3AD00019B31E /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		69ADB2BA245D3E570019B31E /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		69ADB2BB245D3E570019B31E /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		69ADB2C0245D3F870019B31E /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		69ADB2C1245D3F870019B31E /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		69ADB2CB245D5E4D0019B31E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69ADB2CC245D5E4D0019B31E /* MainTarBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTarBarController.h; sourceTree = "<group>"; };
+		69ADB2CD245D5E4D0019B31E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		69ADB2CE245D5E4D0019B31E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69ADB2CF245D5E4D0019B31E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69ADB2D0245D5E4D0019B31E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69ADB2D1245D5E4D0019B31E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		69ADB2D2245D5E4D0019B31E /* MainTarBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTarBarController.m; sourceTree = "<group>"; };
+		69ADB2D3245D5E4D0019B31E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69ADB2D9245D62700019B31E /* UIImage+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		69ADB2DA245D62700019B31E /* UIImage+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		69ADB2E2245D67570019B31E /* FindJobController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindJobController.h; sourceTree = "<group>"; };
+		69ADB2E3245D67570019B31E /* FindJobController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindJobController.m; sourceTree = "<group>"; };
+		69ADB2E4245D67570019B31E /* FindJobController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindJobController.xib; sourceTree = "<group>"; };
+		69ADB2F1245D75EB0019B31E /* UITableView+PlaceHoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PlaceHoldView.h"; sourceTree = "<group>"; };
+		69ADB2F2245D75EB0019B31E /* PlaceHoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHoldView.h; sourceTree = "<group>"; };
+		69ADB2F3245D75EB0019B31E /* UITableView+PlaceHoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PlaceHoldView.m"; sourceTree = "<group>"; };
+		69ADB2F4245D75EB0019B31E /* PlaceHoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHoldView.m; sourceTree = "<group>"; };
+		69ADB2F8245D77B40019B31E /* JobCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
+		69ADB2F9245D77B40019B31E /* JobCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
+		69ADB2FA245D77B40019B31E /* JobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
+		A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuXian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8702DB4BA861A40F78D9318 /* Pods-GuXian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuXian.debug.xcconfig"; path = "Target Support Files/Pods-GuXian/Pods-GuXian.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69ADB24D245D186B0019B31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D88FD47F758DB1D7060FEDB /* libPods-GuXian.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69ADB247245D186B0019B31E = {
+			isa = PBXGroup;
+			children = (
+				69ADB252245D186B0019B31E /* GuXian */,
+				69ADB251245D186B0019B31E /* Products */,
+				F0D5A0F05E9B8F2F0D3EBE60 /* Pods */,
+				DE5EE00E4335FFDD02C5F200 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69ADB251245D186B0019B31E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB250245D186B0019B31E /* GuXian.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69ADB252245D186B0019B31E /* GuXian */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2CA245D5E4D0019B31E /* Main */,
+				69ADB2C7245D5C4F0019B31E /* FindJob */,
+				69ADB2C6245D5C4F0019B31E /* Course */,
+				69ADB2C9245D5C4F0019B31E /* Training */,
+				69ADB2C8245D5C4F0019B31E /* PersonalCenter */,
+				69ADB28C245D2F900019B31E /* Base */,
+				69ADB279245D1D3F0019B31E /* Tool */,
+				69ADB26C245D1CD60019B31E /* Login */,
+				69ADB25C245D186B0019B31E /* Main.storyboard */,
+				69ADB25F245D186C0019B31E /* Assets.xcassets */,
+				69ADB261245D186C0019B31E /* LaunchScreen.storyboard */,
+				69ADB264245D186C0019B31E /* Info.plist */,
+			);
+			path = GuXian;
+			sourceTree = "<group>";
+		};
+		69ADB26C245D1CD60019B31E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB26D245D1CD60019B31E /* Controller */,
+				69ADB26E245D1CD60019B31E /* Model */,
+				69ADB26F245D1CD60019B31E /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		69ADB26D245D1CD60019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB284245D283F0019B31E /* LoginController.h */,
+				69ADB285245D283F0019B31E /* LoginController.m */,
+				69ADB286245D283F0019B31E /* LoginController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB26E245D1CD60019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB26F245D1CD60019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB279245D1D3F0019B31E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2F0245D75EB0019B31E /* TableViewWithNoData */,
+				69ADB2B6245D3AC50019B31E /* Device */,
+				69ADB283245D20500019B31E /* Category */,
+				69ADB27A245D1D540019B31E /* Data */,
+				69ADB27B245D1D540019B31E /* NetWork */,
+				69ADB282245D200B0019B31E /* CommonHead.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		69ADB27A245D1D540019B31E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB27C245D1D600019B31E /* DataManager.h */,
+				69ADB27D245D1D600019B31E /* DataManager.m */,
+				69ADB27F245D1E1F0019B31E /* UserInfo.h */,
+				69ADB280245D1E1F0019B31E /* UserInfo.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		69ADB27B245D1D540019B31E /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		69ADB283245D20500019B31E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2C0245D3F870019B31E /* UIView+Toast.h */,
+				69ADB2C1245D3F870019B31E /* UIView+Toast.m */,
+				69ADB2BA245D3E570019B31E /* NSString+Extend.h */,
+				69ADB2BB245D3E570019B31E /* NSString+Extend.m */,
+				69ADB2D9245D62700019B31E /* UIImage+Extend.h */,
+				69ADB2DA245D62700019B31E /* UIImage+Extend.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		69ADB28C245D2F900019B31E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB28D245D2F900019B31E /* BaseController.h */,
+				69ADB28E245D2F900019B31E /* BaseController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		69ADB2B6245D3AC50019B31E /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2B7245D3AD00019B31E /* DeviceManager.h */,
+				69ADB2B8245D3AD00019B31E /* DeviceManager.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		69ADB2C6245D5C4F0019B31E /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2E7245D67CF0019B31E /* Controller */,
+				69ADB2E9245D67CF0019B31E /* Model */,
+				69ADB2E8245D67CF0019B31E /* View */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		69ADB2C7245D5C4F0019B31E /* FindJob */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2DD245D67100019B31E /* Controller */,
+				69ADB2DC245D67100019B31E /* Model */,
+				69ADB2DE245D67100019B31E /* View */,
+			);
+			path = FindJob;
+			sourceTree = "<group>";
+		};
+		69ADB2C8245D5C4F0019B31E /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2EE245D67DC0019B31E /* Controller */,
+				69ADB2ED245D67DC0019B31E /* Model */,
+				69ADB2EF245D67DC0019B31E /* View */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		69ADB2C9245D5C4F0019B31E /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2EB245D67D60019B31E /* Controller */,
+				69ADB2EC245D67D60019B31E /* Model */,
+				69ADB2EA245D67D60019B31E /* View */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		69ADB2CA245D5E4D0019B31E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2CB245D5E4D0019B31E /* AppDelegate.h */,
+				69ADB2D0245D5E4D0019B31E /* AppDelegate.m */,
+				69ADB2D1245D5E4D0019B31E /* BaseNavigationController.h */,
+				69ADB2CD245D5E4D0019B31E /* BaseNavigationController.m */,
+				69ADB2CF245D5E4D0019B31E /* main.m */,
+				69ADB2CC245D5E4D0019B31E /* MainTarBarController.h */,
+				69ADB2D2245D5E4D0019B31E /* MainTarBarController.m */,
+				69ADB2D3245D5E4D0019B31E /* ViewController.h */,
+				69ADB2CE245D5E4D0019B31E /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		69ADB2DC245D67100019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB2DD245D67100019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2E2245D67570019B31E /* FindJobController.h */,
+				69ADB2E3245D67570019B31E /* FindJobController.m */,
+				69ADB2E4245D67570019B31E /* FindJobController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB2DE245D67100019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2F7245D77690019B31E /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB2E7245D67CF0019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB2E8245D67CF0019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB2E9245D67CF0019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB2EA245D67D60019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB2EB245D67D60019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB2EC245D67D60019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB2ED245D67DC0019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB2EE245D67DC0019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB2EF245D67DC0019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB2F0245D75EB0019B31E /* TableViewWithNoData */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2F2245D75EB0019B31E /* PlaceHoldView.h */,
+				69ADB2F4245D75EB0019B31E /* PlaceHoldView.m */,
+				69ADB2F1245D75EB0019B31E /* UITableView+PlaceHoldView.h */,
+				69ADB2F3245D75EB0019B31E /* UITableView+PlaceHoldView.m */,
+			);
+			path = TableViewWithNoData;
+			sourceTree = "<group>";
+		};
+		69ADB2F7245D77690019B31E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB2F8245D77B40019B31E /* JobCell.h */,
+				69ADB2F9245D77B40019B31E /* JobCell.m */,
+				69ADB2FA245D77B40019B31E /* JobCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DE5EE00E4335FFDD02C5F200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0D5A0F05E9B8F2F0D3EBE60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8702DB4BA861A40F78D9318 /* Pods-GuXian.debug.xcconfig */,
+				1B69E7EDDA091A0BD84F47A3 /* Pods-GuXian.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69ADB24F245D186B0019B31E /* GuXian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69ADB269245D186C0019B31E /* Build configuration list for PBXNativeTarget "GuXian" */;
+			buildPhases = (
+				112B49ADA22D600F28E26115 /* [CP] Check Pods Manifest.lock */,
+				69ADB24C245D186B0019B31E /* Sources */,
+				69ADB24D245D186B0019B31E /* Frameworks */,
+				69ADB24E245D186B0019B31E /* Resources */,
+				D175419721EF98FC3C1A5BD6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuXian;
+			productName = GuXian;
+			productReference = 69ADB250245D186B0019B31E /* GuXian.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69ADB248245D186B0019B31E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = menthu;
+				TargetAttributes = {
+					69ADB24F245D186B0019B31E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 69ADB24B245D186B0019B31E /* Build configuration list for PBXProject "GuXian" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69ADB247245D186B0019B31E;
+			productRefGroup = 69ADB251245D186B0019B31E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69ADB24F245D186B0019B31E /* GuXian */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69ADB24E245D186B0019B31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69ADB263245D186C0019B31E /* LaunchScreen.storyboard in Resources */,
+				69ADB288245D283F0019B31E /* LoginController.xib in Resources */,
+				69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */,
+				69ADB2FC245D77B40019B31E /* JobCell.xib in Resources */,
+				69ADB260245D186C0019B31E /* Assets.xcassets in Resources */,
+				69ADB25E245D186B0019B31E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		112B49ADA22D600F28E26115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuXian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D175419721EF98FC3C1A5BD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuXian/Pods-GuXian-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuXian/Pods-GuXian-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuXian/Pods-GuXian-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69ADB24C245D186B0019B31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69ADB2D7245D5E4D0019B31E /* AppDelegate.m in Sources */,
+				69ADB2FB245D77B40019B31E /* JobCell.m in Sources */,
+				69ADB2F6245D75EB0019B31E /* PlaceHoldView.m in Sources */,
+				69ADB2D6245D5E4D0019B31E /* main.m in Sources */,
+				69ADB2DB245D62700019B31E /* UIImage+Extend.m in Sources */,
+				69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */,
+				69ADB27E245D1D600019B31E /* DataManager.m in Sources */,
+				69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */,
+				69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */,
+				69ADB28F245D2F900019B31E /* BaseController.m in Sources */,
+				69ADB2D8245D5E4D0019B31E /* MainTarBarController.m in Sources */,
+				69ADB2E5245D67570019B31E /* FindJobController.m in Sources */,
+				69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */,
+				69ADB2D4245D5E4D0019B31E /* BaseNavigationController.m in Sources */,
+				69ADB281245D1E1F0019B31E /* UserInfo.m in Sources */,
+				69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */,
+				69ADB287245D283F0019B31E /* LoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69ADB25C245D186B0019B31E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69ADB25D245D186B0019B31E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69ADB261245D186C0019B31E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69ADB262245D186C0019B31E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69ADB267245D186C0019B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69ADB268245D186C0019B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69ADB26A245D186C0019B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8702DB4BA861A40F78D9318 /* Pods-GuXian.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 25GP64SU6U;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/Tool\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+				);
+				INFOPLIST_FILE = GuXian/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.menthu.GuXian.GuXian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GuXian_Debug;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69ADB26B245D186C0019B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B69E7EDDA091A0BD84F47A3 /* Pods-GuXian.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 25GP64SU6U;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/Tool\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+				);
+				INFOPLIST_FILE = GuXian/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.menthu.GuXian.GuXian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GuXian_Debug;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69ADB24B245D186B0019B31E /* Build configuration list for PBXProject "GuXian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69ADB267245D186C0019B31E /* Debug */,
+				69ADB268245D186C0019B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69ADB269245D186C0019B31E /* Build configuration list for PBXNativeTarget "GuXian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69ADB26A245D186C0019B31E /* Debug */,
+				69ADB26B245D186C0019B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69ADB248245D186B0019B31E /* Project object */;
+}

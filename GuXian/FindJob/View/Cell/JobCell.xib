@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="JobCell">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nodata" translatesAutoresizingMaskIntoConstraints="NO" id="UBx-FK-Q0b">
+                        <rect key="frame" x="10" y="29.5" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UBx-FK-Q0b" secondAttribute="height" id="HxS-9X-HhA"/>
+                            <constraint firstAttribute="width" constant="80" id="uy3-CY-EMs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海科技大学2020年招聘广告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S11-sg-1sv">
+                        <rect key="frame" x="100" y="29.5" width="445" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布时间：2020-03-24 招聘人数：4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8u-js-NL6">
+                        <rect key="frame" x="100" y="60.5" width="445" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="截止时间：2-19-12-05 工作城市：武汉市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="209-qz-e6W">
+                        <rect key="frame" x="100" y="93.5" width="445" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UBx-FK-Q0b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8yV-rs-971"/>
+                    <constraint firstItem="S11-sg-1sv" firstAttribute="leading" secondItem="UBx-FK-Q0b" secondAttribute="trailing" constant="10" id="F4q-Za-nqx"/>
+                    <constraint firstAttribute="trailing" secondItem="S11-sg-1sv" secondAttribute="trailing" constant="10" id="Fc6-ry-nO0"/>
+                    <constraint firstItem="S11-sg-1sv" firstAttribute="top" secondItem="UBx-FK-Q0b" secondAttribute="top" id="NJx-Ph-mrK"/>
+                    <constraint firstItem="209-qz-e6W" firstAttribute="bottom" secondItem="UBx-FK-Q0b" secondAttribute="bottom" id="UYV-7U-NVE"/>
+                    <constraint firstItem="u8u-js-NL6" firstAttribute="trailing" secondItem="S11-sg-1sv" secondAttribute="trailing" id="W6p-r9-eFz"/>
+                    <constraint firstItem="UBx-FK-Q0b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XvZ-KP-f26"/>
+                    <constraint firstItem="u8u-js-NL6" firstAttribute="top" secondItem="S11-sg-1sv" secondAttribute="bottom" constant="10" id="gpk-hi-Cc0"/>
+                    <constraint firstItem="209-qz-e6W" firstAttribute="trailing" secondItem="S11-sg-1sv" secondAttribute="trailing" id="lR0-yh-fkn"/>
+                    <constraint firstItem="209-qz-e6W" firstAttribute="leading" secondItem="S11-sg-1sv" secondAttribute="leading" id="pUl-Fy-0u2"/>
+                    <constraint firstItem="u8u-js-NL6" firstAttribute="leading" secondItem="S11-sg-1sv" secondAttribute="leading" id="ymC-0z-Oq3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-373" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nodata" width="404" height="250"/>
+    </resources>
+</document>
