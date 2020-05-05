@@ -95,6 +95,9 @@
             break;
         }
     }
+    if (!placeHoldView) {
+        return;
+    }
     placeHoldView.hidden = YES;
     [self addSubview:placeHoldView];
     objc_setAssociatedObject(self, @selector(placeHoldView), placeHoldView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

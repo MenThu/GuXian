@@ -9,4 +9,6 @@ target 'GuXian' do
   pod 'MJExtension'
   pod 'MBProgressHUD'
   pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'JPVideoPlayer', '~> 3.1.1'
 end

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isExist;
 - (BOOL)isPureNum;
 - (BOOL)isPhoneNum;
+- (NSString *)getPinyin;
 
 @end
 

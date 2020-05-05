@@ -6,11 +6,11 @@
 //  Copyright © 2020 menthu. All rights reserved.
 //
 
-#import "BaseController.h"
+#import "BaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FindJobController : BaseController
+@interface FindJobController : BaseTableViewController
 
 @end
 

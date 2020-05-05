@@ -3,11 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1D88FD47F758DB1D7060FEDB /* libPods-GuXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */; };
+		69156F04245FC74700B93D0A /* JobDetailWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F02245FC74700B93D0A /* JobDetailWebController.m */; };
+		69156F07245FC8A700B93D0A /* CourseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F06245FC8A700B93D0A /* CourseListController.m */; };
+		69156F0F245FCB8D00B93D0A /* CourceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F0E245FCB8D00B93D0A /* CourceListCell.m */; };
+		69156F12245FCC8E00B93D0A /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F11245FCC8E00B93D0A /* BaseCell.m */; };
+		69156F15245FCD6000B93D0A /* BaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F14245FCD6000B93D0A /* BaseCellModel.m */; };
+		69156F20245FD22000B93D0A /* CourseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156F1D245FD22000B93D0A /* CourseCellModel.m */; };
+		69156FB12460116400B93D0A /* MainTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FA82460116300B93D0A /* MainTableController.m */; };
+		69156FB22460116400B93D0A /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FAC2460116400B93D0A /* ContentController.m */; };
+		69156FB32460116400B93D0A /* MainControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FAD2460116400B93D0A /* MainControllerView.m */; };
+		69156FB42460116400B93D0A /* ContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FAF2460116400B93D0A /* ContentTableView.m */; };
+		69156FBB2460156700B93D0A /* CourseDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FB92460156700B93D0A /* CourseDetailController.m */; };
+		69156FBC2460156700B93D0A /* CourseDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69156FBA2460156700B93D0A /* CourseDetailController.xib */; };
+		69156FBF2460173100B93D0A /* CourseDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FBE2460173100B93D0A /* CourseDetailHeadView.m */; };
+		69156FC12460173900B93D0A /* CourseDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69156FC02460173900B93D0A /* CourseDetailHeadView.xib */; };
+		69156FC42460185000B93D0A /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FC32460185000B93D0A /* UIView+Extend.m */; };
+		69156FE424601D8C00B93D0A /* CourseVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FE224601D8C00B93D0A /* CourseVideoListCell.m */; };
+		69156FE524601D8C00B93D0A /* CourseVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */; };
+		697D2B9B2461537B004EEDCF /* CourseVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2B9A2461537B004EEDCF /* CourseVideoListController.m */; };
+		697D2B9E2461546E004EEDCF /* CourseListVideoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2B9D2461546E004EEDCF /* CourseListVideoTableView.m */; };
+		697D2BA1246155A9004EEDCF /* CourseTextInstruController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2BA0246155A9004EEDCF /* CourseTextInstruController.m */; };
+		697D2BA4246157D5004EEDCF /* CourseDetailSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2BA3246157D5004EEDCF /* CourseDetailSegmentView.m */; };
+		697D2BA6246157DF004EEDCF /* CourseDetailSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D2BA5246157DF004EEDCF /* CourseDetailSegmentView.xib */; };
+		697D2BAA24617117004EEDCF /* TrainingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2BA824617117004EEDCF /* TrainingController.m */; };
+		697D2BAB24617117004EEDCF /* TrainingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D2BA924617117004EEDCF /* TrainingController.xib */; };
+		69A91AF9246175A000C06639 /* ExamCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AF7246175A000C06639 /* ExamCellModel.m */; };
+		69A91AFC246175A800C06639 /* ExamListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AFA246175A800C06639 /* ExamListCell.m */; };
+		69A91B002461778200C06639 /* ExamDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AFE2461778200C06639 /* ExamDetailController.m */; };
+		69A91B012461778200C06639 /* ExamDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A91AFF2461778200C06639 /* ExamDetailController.xib */; };
 		69ADB25E245D186B0019B31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB25C245D186B0019B31E /* Main.storyboard */; };
 		69ADB260245D186C0019B31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB25F245D186C0019B31E /* Assets.xcassets */; };
 		69ADB263245D186C0019B31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB261245D186C0019B31E /* LaunchScreen.storyboard */; };
@@ -15,7 +43,6 @@
 		69ADB281245D1E1F0019B31E /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB280245D1E1F0019B31E /* UserInfo.m */; };
 		69ADB287245D283F0019B31E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB285245D283F0019B31E /* LoginController.m */; };
 		69ADB288245D283F0019B31E /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB286245D283F0019B31E /* LoginController.xib */; };
-		69ADB28F245D2F900019B31E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB28E245D2F900019B31E /* BaseController.m */; };
 		69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2B8245D3AD00019B31E /* DeviceManager.m */; };
 		69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2BB245D3E570019B31E /* NSString+Extend.m */; };
 		69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2C1245D3F870019B31E /* UIView+Toast.m */; };
@@ -29,12 +56,73 @@
 		69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB2E4245D67570019B31E /* FindJobController.xib */; };
 		69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F3245D75EB0019B31E /* UITableView+PlaceHoldView.m */; };
 		69ADB2F6245D75EB0019B31E /* PlaceHoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F4245D75EB0019B31E /* PlaceHoldView.m */; };
-		69ADB2FB245D77B40019B31E /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2F9245D77B40019B31E /* JobCell.m */; };
-		69ADB2FC245D77B40019B31E /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB2FA245D77B40019B31E /* JobCell.xib */; };
+		69ADB302245EA7660019B31E /* SelectCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB301245EA7660019B31E /* SelectCityController.m */; };
+		69ADB305245EA7BC0019B31E /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB304245EA7BC0019B31E /* city.plist */; };
+		69ADB30D245EA8FB0019B31E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB309245EA8FB0019B31E /* BaseController.m */; };
+		69ADB30E245EA8FB0019B31E /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB30A245EA8FB0019B31E /* BaseTableViewController.m */; };
+		69ADB315245EAAFE0019B31E /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB314245EAAFE0019B31E /* LocationManager.m */; };
+		69ADB317245EABA80019B31E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69ADB316245EABA80019B31E /* CoreLocation.framework */; };
+		69ADB32E245EC6CC0019B31E /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB329245EC6CC0019B31E /* JobCell.m */; };
+		69ADB32F245EC6CC0019B31E /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB32B245EC6CC0019B31E /* JobCell.xib */; };
+		69ADB330245EC6CC0019B31E /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB32C245EC6CC0019B31E /* CityCell.xib */; };
+		69ADB331245EC6CC0019B31E /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB32D245EC6CC0019B31E /* CityCell.m */; };
+		69ADB334245EC6EF0019B31E /* CitySectionHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB333245EC6EF0019B31E /* CitySectionHead.m */; };
+		69ADB33D245EE4E20019B31E /* SelectIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB33C245EE4E20019B31E /* SelectIndexView.m */; };
+		69ADB340245EEDA60019B31E /* BaseWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB33F245EEDA60019B31E /* BaseWebController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B69E7EDDA091A0BD84F47A3 /* Pods-GuXian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuXian.release.xcconfig"; path = "Target Support Files/Pods-GuXian/Pods-GuXian.release.xcconfig"; sourceTree = "<group>"; };
+		69156F02245FC74700B93D0A /* JobDetailWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailWebController.m; sourceTree = "<group>"; };
+		69156F03245FC74700B93D0A /* JobDetailWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailWebController.h; sourceTree = "<group>"; };
+		69156F05245FC8A700B93D0A /* CourseListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseListController.h; sourceTree = "<group>"; };
+		69156F06245FC8A700B93D0A /* CourseListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseListController.m; sourceTree = "<group>"; };
+		69156F0D245FCB8D00B93D0A /* CourceListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourceListCell.h; sourceTree = "<group>"; };
+		69156F0E245FCB8D00B93D0A /* CourceListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourceListCell.m; sourceTree = "<group>"; };
+		69156F10245FCC8E00B93D0A /* BaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		69156F11245FCC8E00B93D0A /* BaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		69156F13245FCD6000B93D0A /* BaseCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCellModel.h; sourceTree = "<group>"; };
+		69156F14245FCD6000B93D0A /* BaseCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCellModel.m; sourceTree = "<group>"; };
+		69156F1C245FD22000B93D0A /* CourseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCellModel.h; sourceTree = "<group>"; };
+		69156F1D245FD22000B93D0A /* CourseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCellModel.m; sourceTree = "<group>"; };
+		69156FA82460116300B93D0A /* MainTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableController.m; sourceTree = "<group>"; };
+		69156FA92460116300B93D0A /* MainControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainControllerView.h; sourceTree = "<group>"; };
+		69156FAA2460116400B93D0A /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
+		69156FAB2460116400B93D0A /* MainTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableController.h; sourceTree = "<group>"; };
+		69156FAC2460116400B93D0A /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
+		69156FAD2460116400B93D0A /* MainControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerView.m; sourceTree = "<group>"; };
+		69156FAF2460116400B93D0A /* ContentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTableView.m; sourceTree = "<group>"; };
+		69156FB02460116400B93D0A /* ContentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTableView.h; sourceTree = "<group>"; };
+		69156FB82460156700B93D0A /* CourseDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseDetailController.h; sourceTree = "<group>"; };
+		69156FB92460156700B93D0A /* CourseDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseDetailController.m; sourceTree = "<group>"; };
+		69156FBA2460156700B93D0A /* CourseDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseDetailController.xib; sourceTree = "<group>"; };
+		69156FBD2460173100B93D0A /* CourseDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseDetailHeadView.h; sourceTree = "<group>"; };
+		69156FBE2460173100B93D0A /* CourseDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseDetailHeadView.m; sourceTree = "<group>"; };
+		69156FC02460173900B93D0A /* CourseDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseDetailHeadView.xib; sourceTree = "<group>"; };
+		69156FC22460185000B93D0A /* UIView+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		69156FC32460185000B93D0A /* UIView+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		69156FE124601D8C00B93D0A /* CourseVideoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseVideoListCell.h; sourceTree = "<group>"; };
+		69156FE224601D8C00B93D0A /* CourseVideoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseVideoListCell.m; sourceTree = "<group>"; };
+		69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseVideoListCell.xib; sourceTree = "<group>"; };
+		697D2B992461537B004EEDCF /* CourseVideoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseVideoListController.h; sourceTree = "<group>"; };
+		697D2B9A2461537B004EEDCF /* CourseVideoListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseVideoListController.m; sourceTree = "<group>"; };
+		697D2B9C2461546E004EEDCF /* CourseListVideoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseListVideoTableView.h; sourceTree = "<group>"; };
+		697D2B9D2461546E004EEDCF /* CourseListVideoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseListVideoTableView.m; sourceTree = "<group>"; };
+		697D2B9F246155A9004EEDCF /* CourseTextInstruController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTextInstruController.h; sourceTree = "<group>"; };
+		697D2BA0246155A9004EEDCF /* CourseTextInstruController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTextInstruController.m; sourceTree = "<group>"; };
+		697D2BA2246157D5004EEDCF /* CourseDetailSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseDetailSegmentView.h; sourceTree = "<group>"; };
+		697D2BA3246157D5004EEDCF /* CourseDetailSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseDetailSegmentView.m; sourceTree = "<group>"; };
+		697D2BA5246157DF004EEDCF /* CourseDetailSegmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseDetailSegmentView.xib; sourceTree = "<group>"; };
+		697D2BA724617117004EEDCF /* TrainingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingController.h; sourceTree = "<group>"; };
+		697D2BA824617117004EEDCF /* TrainingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingController.m; sourceTree = "<group>"; };
+		697D2BA924617117004EEDCF /* TrainingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingController.xib; sourceTree = "<group>"; };
+		69A91AF7246175A000C06639 /* ExamCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamCellModel.m; sourceTree = "<group>"; };
+		69A91AF8246175A000C06639 /* ExamCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamCellModel.h; sourceTree = "<group>"; };
+		69A91AFA246175A800C06639 /* ExamListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamListCell.m; sourceTree = "<group>"; };
+		69A91AFB246175A800C06639 /* ExamListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamListCell.h; sourceTree = "<group>"; };
+		69A91AFD2461778200C06639 /* ExamDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExamDetailController.h; sourceTree = "<group>"; };
+		69A91AFE2461778200C06639 /* ExamDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExamDetailController.m; sourceTree = "<group>"; };
+		69A91AFF2461778200C06639 /* ExamDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamDetailController.xib; sourceTree = "<group>"; };
 		69ADB250245D186B0019B31E /* GuXian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuXian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ADB25D245D186B0019B31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69ADB25F245D186C0019B31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,8 +136,6 @@
 		69ADB284245D283F0019B31E /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		69ADB285245D283F0019B31E /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		69ADB286245D283F0019B31E /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
-		69ADB28D245D2F900019B31E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		69ADB28E245D2F900019B31E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		69ADB2B7245D3AD00019B31E /* DeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
 		69ADB2B8245D3AD00019B31E /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
 		69ADB2BA245D3E570019B31E /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
@@ -74,9 +160,28 @@
 		69ADB2F2245D75EB0019B31E /* PlaceHoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHoldView.h; sourceTree = "<group>"; };
 		69ADB2F3245D75EB0019B31E /* UITableView+PlaceHoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PlaceHoldView.m"; sourceTree = "<group>"; };
 		69ADB2F4245D75EB0019B31E /* PlaceHoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHoldView.m; sourceTree = "<group>"; };
-		69ADB2F8245D77B40019B31E /* JobCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
-		69ADB2F9245D77B40019B31E /* JobCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
-		69ADB2FA245D77B40019B31E /* JobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
+		69ADB300245EA7660019B31E /* SelectCityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectCityController.h; sourceTree = "<group>"; };
+		69ADB301245EA7660019B31E /* SelectCityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectCityController.m; sourceTree = "<group>"; };
+		69ADB304245EA7BC0019B31E /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		69ADB309245EA8FB0019B31E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		69ADB30A245EA8FB0019B31E /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		69ADB30B245EA8FB0019B31E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		69ADB30C245EA8FB0019B31E /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		69ADB313245EAAFE0019B31E /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		69ADB314245EAAFE0019B31E /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		69ADB316245EABA80019B31E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		69ADB328245EC6CB0019B31E /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		69ADB329245EC6CC0019B31E /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
+		69ADB32A245EC6CC0019B31E /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
+		69ADB32B245EC6CC0019B31E /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
+		69ADB32C245EC6CC0019B31E /* CityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		69ADB32D245EC6CC0019B31E /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		69ADB332245EC6EF0019B31E /* CitySectionHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySectionHead.h; sourceTree = "<group>"; };
+		69ADB333245EC6EF0019B31E /* CitySectionHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySectionHead.m; sourceTree = "<group>"; };
+		69ADB33B245EE4E20019B31E /* SelectIndexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectIndexView.h; sourceTree = "<group>"; };
+		69ADB33C245EE4E20019B31E /* SelectIndexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectIndexView.m; sourceTree = "<group>"; };
+		69ADB33E245EEDA60019B31E /* BaseWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebController.h; sourceTree = "<group>"; };
+		69ADB33F245EEDA60019B31E /* BaseWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebController.m; sourceTree = "<group>"; };
 		A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuXian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8702DB4BA861A40F78D9318 /* Pods-GuXian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuXian.debug.xcconfig"; path = "Target Support Files/Pods-GuXian/Pods-GuXian.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ADB317245EABA80019B31E /* CoreLocation.framework in Frameworks */,
 				1D88FD47F758DB1D7060FEDB /* libPods-GuXian.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +199,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69156FA62460116300B93D0A /* MultiScroll */ = {
+			isa = PBXGroup;
+			children = (
+				69156FA72460116300B93D0A /* Controller */,
+				69156FAE2460116400B93D0A /* View */,
+			);
+			path = MultiScroll;
+			sourceTree = "<group>";
+		};
+		69156FA72460116300B93D0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69156FAA2460116400B93D0A /* ContentController.h */,
+				69156FAC2460116400B93D0A /* ContentController.m */,
+				69156FA92460116300B93D0A /* MainControllerView.h */,
+				69156FAD2460116400B93D0A /* MainControllerView.m */,
+				69156FAB2460116400B93D0A /* MainTableController.h */,
+				69156FA82460116300B93D0A /* MainTableController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69156FAE2460116400B93D0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69156FB02460116400B93D0A /* ContentTableView.h */,
+				69156FAF2460116400B93D0A /* ContentTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		69ADB247245D186B0019B31E = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +251,7 @@
 		69ADB252245D186B0019B31E /* GuXian */ = {
 			isa = PBXGroup;
 			children = (
+				69ADB303245EA7BC0019B31E /* Resource */,
 				69ADB2CA245D5E4D0019B31E /* Main */,
 				69ADB2C7245D5C4F0019B31E /* FindJob */,
 				69ADB2C6245D5C4F0019B31E /* Course */,
@@ -167,6 +305,8 @@
 		69ADB279245D1D3F0019B31E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				69156FA62460116300B93D0A /* MultiScroll */,
+				69ADB30F245EAA7D0019B31E /* Location */,
 				69ADB2F0245D75EB0019B31E /* TableViewWithNoData */,
 				69ADB2B6245D3AC50019B31E /* Device */,
 				69ADB283245D20500019B31E /* Category */,
@@ -204,6 +344,8 @@
 				69ADB2BB245D3E570019B31E /* NSString+Extend.m */,
 				69ADB2D9245D62700019B31E /* UIImage+Extend.h */,
 				69ADB2DA245D62700019B31E /* UIImage+Extend.m */,
+				69156FC22460185000B93D0A /* UIView+Extend.h */,
+				69156FC32460185000B93D0A /* UIView+Extend.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -211,8 +353,9 @@
 		69ADB28C245D2F900019B31E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				69ADB28D245D2F900019B31E /* BaseController.h */,
-				69ADB28E245D2F900019B31E /* BaseController.m */,
+				69ADB308245EA8FB0019B31E /* Controller */,
+				69ADB306245EA8FB0019B31E /* Model */,
+				69ADB307245EA8FB0019B31E /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -295,6 +438,10 @@
 				69ADB2E2245D67570019B31E /* FindJobController.h */,
 				69ADB2E3245D67570019B31E /* FindJobController.m */,
 				69ADB2E4245D67570019B31E /* FindJobController.xib */,
+				69156F03245FC74700B93D0A /* JobDetailWebController.h */,
+				69156F02245FC74700B93D0A /* JobDetailWebController.m */,
+				69ADB300245EA7660019B31E /* SelectCityController.h */,
+				69ADB301245EA7660019B31E /* SelectCityController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,7 +449,16 @@
 		69ADB2DE245D67100019B31E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				69ADB2F7245D77690019B31E /* Cell */,
+				69ADB328245EC6CB0019B31E /* CityCell.h */,
+				69ADB32D245EC6CC0019B31E /* CityCell.m */,
+				69ADB32C245EC6CC0019B31E /* CityCell.xib */,
+				69ADB32A245EC6CC0019B31E /* JobCell.h */,
+				69ADB329245EC6CC0019B31E /* JobCell.m */,
+				69ADB32B245EC6CC0019B31E /* JobCell.xib */,
+				69ADB332245EC6EF0019B31E /* CitySectionHead.h */,
+				69ADB333245EC6EF0019B31E /* CitySectionHead.m */,
+				69ADB33B245EE4E20019B31E /* SelectIndexView.h */,
+				69ADB33C245EE4E20019B31E /* SelectIndexView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +466,15 @@
 		69ADB2E7245D67CF0019B31E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				69156FB82460156700B93D0A /* CourseDetailController.h */,
+				69156FB92460156700B93D0A /* CourseDetailController.m */,
+				69156FBA2460156700B93D0A /* CourseDetailController.xib */,
+				69156F05245FC8A700B93D0A /* CourseListController.h */,
+				69156F06245FC8A700B93D0A /* CourseListController.m */,
+				697D2B9F246155A9004EEDCF /* CourseTextInstruController.h */,
+				697D2BA0246155A9004EEDCF /* CourseTextInstruController.m */,
+				697D2B992461537B004EEDCF /* CourseVideoListController.h */,
+				697D2B9A2461537B004EEDCF /* CourseVideoListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +482,19 @@
 		69ADB2E8245D67CF0019B31E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69156F0D245FCB8D00B93D0A /* CourceListCell.h */,
+				69156F0E245FCB8D00B93D0A /* CourceListCell.m */,
+				69156FBD2460173100B93D0A /* CourseDetailHeadView.h */,
+				69156FBE2460173100B93D0A /* CourseDetailHeadView.m */,
+				69156FC02460173900B93D0A /* CourseDetailHeadView.xib */,
+				697D2BA2246157D5004EEDCF /* CourseDetailSegmentView.h */,
+				697D2BA3246157D5004EEDCF /* CourseDetailSegmentView.m */,
+				697D2BA5246157DF004EEDCF /* CourseDetailSegmentView.xib */,
+				69156FE124601D8C00B93D0A /* CourseVideoListCell.h */,
+				69156FE224601D8C00B93D0A /* CourseVideoListCell.m */,
+				69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */,
+				697D2B9C2461546E004EEDCF /* CourseListVideoTableView.h */,
+				697D2B9D2461546E004EEDCF /* CourseListVideoTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +502,8 @@
 		69ADB2E9245D67CF0019B31E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69156F1C245FD22000B93D0A /* CourseCellModel.h */,
+				69156F1D245FD22000B93D0A /* CourseCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +511,8 @@
 		69ADB2EA245D67D60019B31E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69A91AFB246175A800C06639 /* ExamListCell.h */,
+				69A91AFA246175A800C06639 /* ExamListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +520,12 @@
 		69ADB2EB245D67D60019B31E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				697D2BA724617117004EEDCF /* TrainingController.h */,
+				697D2BA824617117004EEDCF /* TrainingController.m */,
+				697D2BA924617117004EEDCF /* TrainingController.xib */,
+				69A91AFD2461778200C06639 /* ExamDetailController.h */,
+				69A91AFE2461778200C06639 /* ExamDetailController.m */,
+				69A91AFF2461778200C06639 /* ExamDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +533,8 @@
 		69ADB2EC245D67D60019B31E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69A91AF8246175A000C06639 /* ExamCellModel.h */,
+				69A91AF7246175A000C06639 /* ExamCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,19 +571,58 @@
 			path = TableViewWithNoData;
 			sourceTree = "<group>";
 		};
-		69ADB2F7245D77690019B31E /* Cell */ = {
+		69ADB303245EA7BC0019B31E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				69ADB2F8245D77B40019B31E /* JobCell.h */,
-				69ADB2F9245D77B40019B31E /* JobCell.m */,
-				69ADB2FA245D77B40019B31E /* JobCell.xib */,
+				69ADB304245EA7BC0019B31E /* city.plist */,
 			);
-			path = Cell;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		69ADB306245EA8FB0019B31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69156F13245FCD6000B93D0A /* BaseCellModel.h */,
+				69156F14245FCD6000B93D0A /* BaseCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69ADB307245EA8FB0019B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69156F10245FCC8E00B93D0A /* BaseCell.h */,
+				69156F11245FCC8E00B93D0A /* BaseCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ADB308245EA8FB0019B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB30B245EA8FB0019B31E /* BaseController.h */,
+				69ADB309245EA8FB0019B31E /* BaseController.m */,
+				69ADB30C245EA8FB0019B31E /* BaseTableViewController.h */,
+				69ADB30A245EA8FB0019B31E /* BaseTableViewController.m */,
+				69ADB33E245EEDA60019B31E /* BaseWebController.h */,
+				69ADB33F245EEDA60019B31E /* BaseWebController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69ADB30F245EAA7D0019B31E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				69ADB313245EAAFE0019B31E /* LocationManager.h */,
+				69ADB314245EAAFE0019B31E /* LocationManager.m */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		DE5EE00E4335FFDD02C5F200 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69ADB316245EABA80019B31E /* CoreLocation.framework */,
 				A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */,
 			);
 			name = Frameworks;
@@ -469,10 +698,18 @@
 			files = (
 				69ADB263245D186C0019B31E /* LaunchScreen.storyboard in Resources */,
 				69ADB288245D283F0019B31E /* LoginController.xib in Resources */,
+				69156FC12460173900B93D0A /* CourseDetailHeadView.xib in Resources */,
+				69156FBC2460156700B93D0A /* CourseDetailController.xib in Resources */,
+				69ADB305245EA7BC0019B31E /* city.plist in Resources */,
+				69A91B012461778200C06639 /* ExamDetailController.xib in Resources */,
 				69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */,
-				69ADB2FC245D77B40019B31E /* JobCell.xib in Resources */,
+				697D2BA6246157DF004EEDCF /* CourseDetailSegmentView.xib in Resources */,
 				69ADB260245D186C0019B31E /* Assets.xcassets in Resources */,
+				69156FE524601D8C00B93D0A /* CourseVideoListCell.xib in Resources */,
+				69ADB32F245EC6CC0019B31E /* JobCell.xib in Resources */,
+				69ADB330245EC6CC0019B31E /* CityCell.xib in Resources */,
 				69ADB25E245D186B0019B31E /* Main.storyboard in Resources */,
+				697D2BAB24617117004EEDCF /* TrainingController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,21 +763,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ADB2D7245D5E4D0019B31E /* AppDelegate.m in Sources */,
-				69ADB2FB245D77B40019B31E /* JobCell.m in Sources */,
 				69ADB2F6245D75EB0019B31E /* PlaceHoldView.m in Sources */,
 				69ADB2D6245D5E4D0019B31E /* main.m in Sources */,
+				69ADB30E245EA8FB0019B31E /* BaseTableViewController.m in Sources */,
+				697D2B9B2461537B004EEDCF /* CourseVideoListController.m in Sources */,
 				69ADB2DB245D62700019B31E /* UIImage+Extend.m in Sources */,
+				697D2BA1246155A9004EEDCF /* CourseTextInstruController.m in Sources */,
 				69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */,
+				69ADB334245EC6EF0019B31E /* CitySectionHead.m in Sources */,
+				69156F20245FD22000B93D0A /* CourseCellModel.m in Sources */,
+				69156FB32460116400B93D0A /* MainControllerView.m in Sources */,
 				69ADB27E245D1D600019B31E /* DataManager.m in Sources */,
+				69156FB42460116400B93D0A /* ContentTableView.m in Sources */,
+				69ADB32E245EC6CC0019B31E /* JobCell.m in Sources */,
+				69156FB12460116400B93D0A /* MainTableController.m in Sources */,
+				69A91B002461778200C06639 /* ExamDetailController.m in Sources */,
+				69156F12245FCC8E00B93D0A /* BaseCell.m in Sources */,
 				69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */,
+				69156FC42460185000B93D0A /* UIView+Extend.m in Sources */,
+				69A91AF9246175A000C06639 /* ExamCellModel.m in Sources */,
 				69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */,
-				69ADB28F245D2F900019B31E /* BaseController.m in Sources */,
+				69ADB340245EEDA60019B31E /* BaseWebController.m in Sources */,
 				69ADB2D8245D5E4D0019B31E /* MainTarBarController.m in Sources */,
+				697D2BAA24617117004EEDCF /* TrainingController.m in Sources */,
+				697D2BA4246157D5004EEDCF /* CourseDetailSegmentView.m in Sources */,
+				69156FBB2460156700B93D0A /* CourseDetailController.m in Sources */,
+				69ADB30D245EA8FB0019B31E /* BaseController.m in Sources */,
 				69ADB2E5245D67570019B31E /* FindJobController.m in Sources */,
+				69156F0F245FCB8D00B93D0A /* CourceListCell.m in Sources */,
+				69156F15245FCD6000B93D0A /* BaseCellModel.m in Sources */,
 				69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */,
+				69156FE424601D8C00B93D0A /* CourseVideoListCell.m in Sources */,
+				69A91AFC246175A800C06639 /* ExamListCell.m in Sources */,
+				69156FBF2460173100B93D0A /* CourseDetailHeadView.m in Sources */,
+				69156FB22460116400B93D0A /* ContentController.m in Sources */,
+				69156F04245FC74700B93D0A /* JobDetailWebController.m in Sources */,
 				69ADB2D4245D5E4D0019B31E /* BaseNavigationController.m in Sources */,
+				69ADB302245EA7660019B31E /* SelectCityController.m in Sources */,
+				69ADB315245EAAFE0019B31E /* LocationManager.m in Sources */,
 				69ADB281245D1E1F0019B31E /* UserInfo.m in Sources */,
+				697D2B9E2461546E004EEDCF /* CourseListVideoTableView.m in Sources */,
 				69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */,
+				69156F07245FC8A700B93D0A /* CourseListController.m in Sources */,
+				69ADB331245EC6CC0019B31E /* CityCell.m in Sources */,
+				69ADB33D245EE4E20019B31E /* SelectIndexView.m in Sources */,
 				69ADB287245D283F0019B31E /* LoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

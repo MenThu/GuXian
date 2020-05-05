@@ -18,6 +18,7 @@ extern "C" {
 CGFloat getStatusBarHeight(void);
 CGFloat getNavibarHeight(void);
 CGFloat bottomHeight(void);
+CGSize getScreenSize(void);
 
 #ifdef __cplusplus
 }

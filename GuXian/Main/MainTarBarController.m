@@ -21,6 +21,7 @@
     //配置UITarBar样式
     UITabBar *tarbar = [UITabBar appearance];
     tarbar.barTintColor = UIColor.whiteColor;
+    tarbar.translucent = NO;
     
     //设置UITarbarItem样式
     NSMutableDictionary *normalAttributes = [NSMutableDictionary dictionary];
@@ -49,10 +50,10 @@
     [self addChildViewController:@"FindJobController" tabbarItemName:@"求职" tarbarImg:@"FindJob"];
     
     //课程
-    [self addChildViewController:@"UIViewController" tabbarItemName:@"课程" tarbarImg:@"Course"];
+    [self addChildViewController:@"CourseListController" tabbarItemName:@"课程" tarbarImg:@"Course"];
     
     //辅导
-    [self addChildViewController:@"UIViewController" tabbarItemName:@"辅导" tarbarImg:@"Training"];
+    [self addChildViewController:@"TrainingController" tabbarItemName:@"题库" tarbarImg:@"Training"];
     
     //个人中心
     [self addChildViewController:@"UIViewController" tabbarItemName:@"我" tarbarImg:@"PersonalCenter"];

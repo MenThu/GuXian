@@ -12,11 +12,17 @@
 #import "UIImage+Extend.h"
 #import "UITableView+PlaceHoldView.h"
 #import "JobCell.h"
+#import "MJRefresh.h"
+#import "Masonry.h"
+#import "SelectCityController.h"
+#import "JobDetailWebController.h"
 
 @interface FindJobController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSearchViewRight2Super;
 
+@property (weak, nonatomic) IBOutlet UIView *topContainerView;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSearchViewRight2Super;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *searchContainerView2Top;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topContainerViewHeight;
 
@@ -29,8 +35,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *moreCategory;
 @property (nonatomic, strong) NSArray <UIButton *> *buttonArray;
 
-
-@property (weak, nonatomic) IBOutlet UITableView *jobTableView;
 @property (nonatomic, strong) NSMutableArray <NSNumber *> *tableSource;
 
 @end
@@ -40,6 +44,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    @weakify(self);
     self->_isNavibarHidden = YES;
     
     self.buttonArray = @[self.allButton, self.beginCategory, self.shanghaiCategory, self.wuhanCategory];
@@ -53,16 +59,16 @@
     }
     [self clickCategoryButton:self.allButton];
     
-    @weakify(self);
-    self.jobTableView.placeHoldView = [PlaceHoldView placeHoldWithImg:@"nodata" placeHold:@"没有数据哟" placeHoldOffset:CGPointZero tapView:^{
-        @strongify(self);
-        for (NSInteger index = 0; index < 10; index ++) {
-            [self.tableSource addObject:@(0)];
-        }
-        [self.jobTableView reloadData];
-    }];
-    [self.jobTableView registerNib:[UINib nibWithNibName:@"JobCell" bundle:nil] forCellReuseIdentifier:@"JobCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JobCell" bundle:nil] forCellReuseIdentifier:@"JobCell"];
     self.tableSource = [[NSMutableArray alloc] init];
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.left.bottom.right.equalTo(self.view);
+        make.top.equalTo(self.topContainerView.mas_bottom);
+    }];
+    
+    self.tableView.mj_footer.hidden = YES;
+    self.tableView.mj_header.hidden = YES;
 }
 
 - (void)viewDidLayoutSubviews{
@@ -80,8 +86,38 @@
         }
         sender.selected = YES;
     }
+    if (sender.tag == 4) {
+        [self.navigationController pushViewController:[[SelectCityController alloc] init] animated:YES];
+    }
 }
 
+#pragma mark - OverWritte
+- (void)tapNoDataHintView{
+    for (NSInteger index = 0; index < 10; index ++) {
+        [self.tableSource addObject:@(0)];
+    }
+    [self.tableView reloadData];
+    self.tableView.mj_footer.hidden = NO;
+    self.tableView.mj_header.hidden = NO;
+}
+
+- (void)dragTableViewHead{
+    NSMutableArray *tableSource = @[].mutableCopy;
+    for (NSInteger index = 0; index < 10; index ++) {
+        [tableSource addObject:@(0)];
+    }
+    self.tableSource = [NSMutableArray arrayWithArray:tableSource];
+    [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+}
+
+- (void)dragTableViewFoot:(NSInteger)currentPageNo nextPageNo:(NSInteger)nextPageNo{
+    for (NSInteger index = 0; index < 10; index ++) {
+        [self.tableSource addObject:@(0)];
+    }
+    [self.tableView reloadData];
+    [self.tableView.mj_footer endRefreshing];
+}
 
 #pragma mark - TextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
@@ -108,6 +144,12 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    JobDetailWebController *detailController = [[JobDetailWebController alloc] init];
+    [self.navigationController pushViewController:detailController animated:YES];
+     detailController.loadUrl = @"https://www.jianshu.com/";
 }
 
 @end

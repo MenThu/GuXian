@@ -37,6 +37,15 @@ CGFloat bottomHeight(void){
     }
 }
 
+CGSize getScreenSize(void){
+    static dispatch_once_t onceToken;
+    static CGSize screenSize;
+    dispatch_once(&onceToken, ^{
+        screenSize = UIScreen.mainScreen.bounds.size;
+    });
+    return screenSize;
+}
+
 @implementation DeviceManager
 
 @end

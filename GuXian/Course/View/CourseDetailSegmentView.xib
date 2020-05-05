@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CourseDetailSegmentView">
+            <rect key="frame" x="0.0" y="0.0" width="701" height="352"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi9-rX-vdT">
+                    <rect key="frame" x="200.66666666666663" y="0.0" width="150" height="352"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="R5q-b4-xjt"/>
+                    </constraints>
+                    <state key="normal" title="课程">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.87058823529411766" green="0.34901960784313724" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="0uJ-gY-rYu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-BB-Csp">
+                    <rect key="frame" x="350.66666666666669" y="0.0" width="150" height="352"/>
+                    <state key="normal" title="简介">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.87058823529411766" green="0.34901960784313724" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="os7-uM-A9q"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpv-sf-aPW">
+                    <rect key="frame" x="245" y="333" width="60" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.34901960784313724" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="tfw-BB-Csp" firstAttribute="leading" secondItem="Hi9-rX-vdT" secondAttribute="trailing" id="DD1-3C-5uB"/>
+                <constraint firstAttribute="bottom" secondItem="Hi9-rX-vdT" secondAttribute="bottom" id="Ltc-5B-hjX"/>
+                <constraint firstItem="Hi9-rX-vdT" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SxA-nK-6xk"/>
+                <constraint firstItem="Hi9-rX-vdT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fr9-CN-rpu"/>
+                <constraint firstItem="Hi9-rX-vdT" firstAttribute="width" secondItem="tfw-BB-Csp" secondAttribute="width" id="hT2-Q2-Ib2"/>
+                <constraint firstAttribute="bottom" secondItem="tfw-BB-Csp" secondAttribute="bottom" id="kfe-K5-xO4"/>
+                <constraint firstItem="tfw-BB-Csp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lpz-XF-nXm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="courseButton" destination="Hi9-rX-vdT" id="ebI-sk-Ygz"/>
+                <outlet property="indexView" destination="Jpv-sf-aPW" id="paw-0h-7lD"/>
+                <outlet property="intruceButton" destination="tfw-BB-Csp" id="FPm-bT-21T"/>
+            </connections>
+            <point key="canvasLocation" x="-41.304347826086961" y="52.173913043478265"/>
+        </view>
+    </objects>
+</document>

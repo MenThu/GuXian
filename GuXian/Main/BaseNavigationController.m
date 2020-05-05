@@ -18,8 +18,12 @@
 
 + (void)initialize{
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:[UIImage createImgWithColor:UIColor.orangeColor imgSize:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
-    [bar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
+    [bar setBackgroundImage:[UIImage createImgWithColor:RGBA(35, 36, 65, 1) imgSize:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
+    
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    attributes[NSForegroundColorAttributeName] = UIColor.whiteColor;
+    attributes[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
+    [bar setTitleTextAttributes:attributes];
     
     // 设置item
     UIBarButtonItem *item = [UIBarButtonItem appearance];
@@ -36,6 +40,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.viewControllers.count < 1) {
+        viewController.hidesBottomBarWhenPushed = NO;
+    }else{
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return self.topViewController.preferredStatusBarStyle;
 }
 
 @end

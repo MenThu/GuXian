@@ -42,6 +42,7 @@
 }
 
 - (BOOL)isPhoneNum{
+    return YES;
     NSString * MOBILE = @"^1(3[0-9]|5[0-35-9]|8[025-9]|70|77)\\d{8}$";
     NSString * CM = @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$";
     NSString * CU = @"^1(3[0-2]|5[256]|8[56])\\d{8}$";
@@ -59,6 +60,20 @@
     }else{
         return NO;
     }
+}
+
+- (NSString *)getPinyin{
+    NSMutableString *pinyinText = [NSMutableString stringWithString:self];
+    // 先转换为带声调的拼音
+    CFStringTransform((__bridge CFMutableStringRef)pinyinText, 0, kCFStringTransformMandarinLatin, NO);
+    
+    // 再转换为不带声调的拼音
+    CFStringTransform((__bridge CFMutableStringRef)pinyinText, 0, kCFStringTransformStripDiacritics, NO);
+    
+    // 转换为首字母大写拼音
+    pinyinText = [pinyinText capitalizedString];
+    
+    return pinyinText;
 }
 
 @end
