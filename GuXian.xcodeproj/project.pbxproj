@@ -69,6 +69,18 @@
 		69ADB334245EC6EF0019B31E /* CitySectionHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB333245EC6EF0019B31E /* CitySectionHead.m */; };
 		69ADB33D245EE4E20019B31E /* SelectIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB33C245EE4E20019B31E /* SelectIndexView.m */; };
 		69ADB340245EEDA60019B31E /* BaseWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB33F245EEDA60019B31E /* BaseWebController.m */; };
+		69FFC66024712F3D0051170C /* BaseCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC65F24712F3D0051170C /* BaseCollectionController.m */; };
+		69FFC663247130C70051170C /* TrainingPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC662247130C70051170C /* TrainingPageController.m */; };
+		69FFC6662471313D0051170C /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC6652471313D0051170C /* BaseModel.m */; };
+		69FFC66C2471326F0051170C /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC66B2471326F0051170C /* BaseCollectionCell.m */; };
+		69FFC66F2471328E0051170C /* TrainingPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC66E2471328E0051170C /* TrainingPageCell.m */; };
+		69FFC672247133A40051170C /* ExamDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC670247133A40051170C /* ExamDetailModel.m */; };
+		69FFC676247136F80051170C /* PersonalCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC674247136F80051170C /* PersonalCenterController.m */; };
+		69FFC677247136F80051170C /* PersonalCenterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FFC675247136F80051170C /* PersonalCenterController.xib */; };
+		69FFC7AE2471666B0051170C /* PersonalDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC7AC2471666B0051170C /* PersonalDetailController.m */; };
+		69FFC7AF2471666B0051170C /* PersonalDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FFC7AD2471666B0051170C /* PersonalDetailController.xib */; };
+		69FFC7B3247167F80051170C /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFC7B1247167F80051170C /* SettingController.m */; };
+		69FFC7B4247167F80051170C /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FFC7B2247167F80051170C /* SettingController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -182,6 +194,27 @@
 		69ADB33C245EE4E20019B31E /* SelectIndexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectIndexView.m; sourceTree = "<group>"; };
 		69ADB33E245EEDA60019B31E /* BaseWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebController.h; sourceTree = "<group>"; };
 		69ADB33F245EEDA60019B31E /* BaseWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebController.m; sourceTree = "<group>"; };
+		69FFC65E24712F3D0051170C /* BaseCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionController.h; sourceTree = "<group>"; };
+		69FFC65F24712F3D0051170C /* BaseCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionController.m; sourceTree = "<group>"; };
+		69FFC661247130C70051170C /* TrainingPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingPageController.h; sourceTree = "<group>"; };
+		69FFC662247130C70051170C /* TrainingPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingPageController.m; sourceTree = "<group>"; };
+		69FFC6642471313D0051170C /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		69FFC6652471313D0051170C /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		69FFC66A2471326F0051170C /* BaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
+		69FFC66B2471326F0051170C /* BaseCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
+		69FFC66D2471328E0051170C /* TrainingPageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingPageCell.h; sourceTree = "<group>"; };
+		69FFC66E2471328E0051170C /* TrainingPageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingPageCell.m; sourceTree = "<group>"; };
+		69FFC670247133A40051170C /* ExamDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamDetailModel.m; sourceTree = "<group>"; };
+		69FFC671247133A40051170C /* ExamDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamDetailModel.h; sourceTree = "<group>"; };
+		69FFC673247136F80051170C /* PersonalCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCenterController.h; sourceTree = "<group>"; };
+		69FFC674247136F80051170C /* PersonalCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterController.m; sourceTree = "<group>"; };
+		69FFC675247136F80051170C /* PersonalCenterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalCenterController.xib; sourceTree = "<group>"; };
+		69FFC7AB2471666B0051170C /* PersonalDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalDetailController.h; sourceTree = "<group>"; };
+		69FFC7AC2471666B0051170C /* PersonalDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalDetailController.m; sourceTree = "<group>"; };
+		69FFC7AD2471666B0051170C /* PersonalDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDetailController.xib; sourceTree = "<group>"; };
+		69FFC7B0247167F80051170C /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		69FFC7B1247167F80051170C /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		69FFC7B2247167F80051170C /* SettingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
 		A8C9E83168AB9EE2F3E72285 /* libPods-GuXian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuXian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8702DB4BA861A40F78D9318 /* Pods-GuXian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuXian.debug.xcconfig"; path = "Target Support Files/Pods-GuXian/Pods-GuXian.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -513,6 +546,8 @@
 			children = (
 				69A91AFB246175A800C06639 /* ExamListCell.h */,
 				69A91AFA246175A800C06639 /* ExamListCell.m */,
+				69FFC66D2471328E0051170C /* TrainingPageCell.h */,
+				69FFC66E2471328E0051170C /* TrainingPageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +558,8 @@
 				697D2BA724617117004EEDCF /* TrainingController.h */,
 				697D2BA824617117004EEDCF /* TrainingController.m */,
 				697D2BA924617117004EEDCF /* TrainingController.xib */,
+				69FFC661247130C70051170C /* TrainingPageController.h */,
+				69FFC662247130C70051170C /* TrainingPageController.m */,
 				69A91AFD2461778200C06639 /* ExamDetailController.h */,
 				69A91AFE2461778200C06639 /* ExamDetailController.m */,
 				69A91AFF2461778200C06639 /* ExamDetailController.xib */,
@@ -533,6 +570,8 @@
 		69ADB2EC245D67D60019B31E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69FFC671247133A40051170C /* ExamDetailModel.h */,
+				69FFC670247133A40051170C /* ExamDetailModel.m */,
 				69A91AF8246175A000C06639 /* ExamCellModel.h */,
 				69A91AF7246175A000C06639 /* ExamCellModel.m */,
 			);
@@ -549,6 +588,15 @@
 		69ADB2EE245D67DC0019B31E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				69FFC673247136F80051170C /* PersonalCenterController.h */,
+				69FFC674247136F80051170C /* PersonalCenterController.m */,
+				69FFC675247136F80051170C /* PersonalCenterController.xib */,
+				69FFC7AB2471666B0051170C /* PersonalDetailController.h */,
+				69FFC7AC2471666B0051170C /* PersonalDetailController.m */,
+				69FFC7AD2471666B0051170C /* PersonalDetailController.xib */,
+				69FFC7B0247167F80051170C /* SettingController.h */,
+				69FFC7B1247167F80051170C /* SettingController.m */,
+				69FFC7B2247167F80051170C /* SettingController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -584,6 +632,8 @@
 			children = (
 				69156F13245FCD6000B93D0A /* BaseCellModel.h */,
 				69156F14245FCD6000B93D0A /* BaseCellModel.m */,
+				69FFC6642471313D0051170C /* BaseModel.h */,
+				69FFC6652471313D0051170C /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -593,6 +643,8 @@
 			children = (
 				69156F10245FCC8E00B93D0A /* BaseCell.h */,
 				69156F11245FCC8E00B93D0A /* BaseCell.m */,
+				69FFC66A2471326F0051170C /* BaseCollectionCell.h */,
+				69FFC66B2471326F0051170C /* BaseCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -606,6 +658,8 @@
 				69ADB30A245EA8FB0019B31E /* BaseTableViewController.m */,
 				69ADB33E245EEDA60019B31E /* BaseWebController.h */,
 				69ADB33F245EEDA60019B31E /* BaseWebController.m */,
+				69FFC65E24712F3D0051170C /* BaseCollectionController.h */,
+				69FFC65F24712F3D0051170C /* BaseCollectionController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -699,15 +753,18 @@
 				69ADB263245D186C0019B31E /* LaunchScreen.storyboard in Resources */,
 				69ADB288245D283F0019B31E /* LoginController.xib in Resources */,
 				69156FC12460173900B93D0A /* CourseDetailHeadView.xib in Resources */,
+				69FFC677247136F80051170C /* PersonalCenterController.xib in Resources */,
 				69156FBC2460156700B93D0A /* CourseDetailController.xib in Resources */,
 				69ADB305245EA7BC0019B31E /* city.plist in Resources */,
 				69A91B012461778200C06639 /* ExamDetailController.xib in Resources */,
 				69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */,
+				69FFC7AF2471666B0051170C /* PersonalDetailController.xib in Resources */,
 				697D2BA6246157DF004EEDCF /* CourseDetailSegmentView.xib in Resources */,
 				69ADB260245D186C0019B31E /* Assets.xcassets in Resources */,
 				69156FE524601D8C00B93D0A /* CourseVideoListCell.xib in Resources */,
 				69ADB32F245EC6CC0019B31E /* JobCell.xib in Resources */,
 				69ADB330245EC6CC0019B31E /* CityCell.xib in Resources */,
+				69FFC7B4247167F80051170C /* SettingController.xib in Resources */,
 				69ADB25E245D186B0019B31E /* Main.storyboard in Resources */,
 				697D2BAB24617117004EEDCF /* TrainingController.xib in Resources */,
 			);
@@ -764,20 +821,27 @@
 			files = (
 				69ADB2D7245D5E4D0019B31E /* AppDelegate.m in Sources */,
 				69ADB2F6245D75EB0019B31E /* PlaceHoldView.m in Sources */,
+				69FFC7B3247167F80051170C /* SettingController.m in Sources */,
 				69ADB2D6245D5E4D0019B31E /* main.m in Sources */,
+				69FFC6662471313D0051170C /* BaseModel.m in Sources */,
 				69ADB30E245EA8FB0019B31E /* BaseTableViewController.m in Sources */,
 				697D2B9B2461537B004EEDCF /* CourseVideoListController.m in Sources */,
 				69ADB2DB245D62700019B31E /* UIImage+Extend.m in Sources */,
 				697D2BA1246155A9004EEDCF /* CourseTextInstruController.m in Sources */,
 				69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */,
 				69ADB334245EC6EF0019B31E /* CitySectionHead.m in Sources */,
+				69FFC66F2471328E0051170C /* TrainingPageCell.m in Sources */,
+				69FFC672247133A40051170C /* ExamDetailModel.m in Sources */,
 				69156F20245FD22000B93D0A /* CourseCellModel.m in Sources */,
 				69156FB32460116400B93D0A /* MainControllerView.m in Sources */,
+				69FFC676247136F80051170C /* PersonalCenterController.m in Sources */,
 				69ADB27E245D1D600019B31E /* DataManager.m in Sources */,
 				69156FB42460116400B93D0A /* ContentTableView.m in Sources */,
 				69ADB32E245EC6CC0019B31E /* JobCell.m in Sources */,
 				69156FB12460116400B93D0A /* MainTableController.m in Sources */,
 				69A91B002461778200C06639 /* ExamDetailController.m in Sources */,
+				69FFC66C2471326F0051170C /* BaseCollectionCell.m in Sources */,
+				69FFC663247130C70051170C /* TrainingPageController.m in Sources */,
 				69156F12245FCC8E00B93D0A /* BaseCell.m in Sources */,
 				69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */,
 				69156FC42460185000B93D0A /* UIView+Extend.m in Sources */,
@@ -791,8 +855,10 @@
 				69ADB30D245EA8FB0019B31E /* BaseController.m in Sources */,
 				69ADB2E5245D67570019B31E /* FindJobController.m in Sources */,
 				69156F0F245FCB8D00B93D0A /* CourceListCell.m in Sources */,
+				69FFC66024712F3D0051170C /* BaseCollectionController.m in Sources */,
 				69156F15245FCD6000B93D0A /* BaseCellModel.m in Sources */,
 				69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */,
+				69FFC7AE2471666B0051170C /* PersonalDetailController.m in Sources */,
 				69156FE424601D8C00B93D0A /* CourseVideoListCell.m in Sources */,
 				69A91AFC246175A800C06639 /* ExamListCell.m in Sources */,
 				69156FBF2460173100B93D0A /* CourseDetailHeadView.m in Sources */,

@@ -25,40 +25,57 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="186.66666666666666"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-xm-fAo">
-                                    <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="93.333333333333329"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="127.33333333333333" height="93.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <state key="normal" title="每日一练" image="jp_videoplayer_play.png"/>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="w5x-bW-5p6"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seK-B4-u73">
-                                    <rect key="frame" x="0.0" y="93.333333333333343" width="149.33333333333334" height="93.333333333333343"/>
+                                    <rect key="frame" x="0.0" y="93.333333333333343" width="127.33333333333333" height="93.333333333333343"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <state key="normal" title="无限刷题" image="jp_videoplayer_play.png"/>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="7hu-iI-Dkb"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-bE-zBT">
-                                    <rect key="frame" x="243.66666666666663" y="0.0" width="149.33333333333337" height="93.333333333333329"/>
+                                    <rect key="frame" x="265.66666666666606" y="0.0" width="127.33333333333331" height="93.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <state key="normal" title="做题记录" image="jp_videoplayer_play.png"/>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="HhE-WW-JRb"/>
+                                    </connections>
                                 </button>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-8a-VXU">
-                                    <rect key="frame" x="149.33333333333334" y="46.333333333333343" width="94.333333333333343" height="94"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="962-8D-3dY">
+                                    <rect key="frame" x="265.66666666666606" y="93.333333333333343" width="127.33333333333331" height="93.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="我的错题" image="jp_videoplayer_play.png"/>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="LdL-DF-XRD"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-8a-VXU">
+                                    <rect key="frame" x="127.33333333333333" y="24" width="138.33333333333337" height="138.66666666666666"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbK-DC-6rc">
-                                            <rect key="frame" x="1" y="1" width="92.333333333333329" height="92"/>
+                                            <rect key="frame" x="1.0000000000000142" y="1" width="136.33333333333337" height="136.66666666666666"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已做：1题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDj-Um-FNf">
-                                                    <rect key="frame" x="10" y="5" width="72.333333333333329" height="18"/>
+                                                    <rect key="frame" x="9.9999999999999929" y="5" width="116.33333333333331" height="32.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pem-vS-BU4">
-                                                    <rect key="frame" x="10" y="32.999999999999993" width="72.333333333333329" height="20.666666666666664"/>
+                                                    <rect key="frame" x="9.9999999999999929" y="47.33333333333303" width="116.33333333333331" height="36.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.87058823529999996" green="0.34901960780000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正确：0题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nX2-hN-V5C">
-                                                    <rect key="frame" x="10" y="63.666666666666664" width="72.333333333333329" height="18.333333333333336"/>
+                                                    <rect key="frame" x="9.9999999999999929" y="94" width="116.33333333333331" height="32.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -90,11 +107,6 @@
                                         <constraint firstAttribute="trailing" secondItem="qbK-DC-6rc" secondAttribute="trailing" constant="1" id="Yyu-4e-tm9"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="962-8D-3dY">
-                                    <rect key="frame" x="243.66666666666663" y="93.333333333333343" width="149.33333333333337" height="93.333333333333343"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <state key="normal" title="我的错题" image="jp_videoplayer_play.png"/>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -113,7 +125,7 @@
                                 <constraint firstItem="fI0-8a-VXU" firstAttribute="centerX" secondItem="RuR-UY-YVN" secondAttribute="centerX" id="hwy-jr-tQU"/>
                                 <constraint firstAttribute="trailing" secondItem="Da0-bE-zBT" secondAttribute="trailing" id="iE2-0a-wZQ"/>
                                 <constraint firstItem="Da0-bE-zBT" firstAttribute="top" secondItem="k0D-xm-fAo" secondAttribute="top" id="iUc-JD-Xtp"/>
-                                <constraint firstItem="fI0-8a-VXU" firstAttribute="width" secondItem="RuR-UY-YVN" secondAttribute="height" multiplier="0.5" constant="0.80000000000000004" id="m9R-No-3yw"/>
+                                <constraint firstItem="fI0-8a-VXU" firstAttribute="width" secondItem="RuR-UY-YVN" secondAttribute="width" multiplier="0.35" constant="1" id="m9R-No-3yw"/>
                                 <constraint firstItem="962-8D-3dY" firstAttribute="top" secondItem="Da0-bE-zBT" secondAttribute="bottom" id="o0H-Fy-gdg"/>
                                 <constraint firstItem="seK-B4-u73" firstAttribute="trailing" secondItem="k0D-xm-fAo" secondAttribute="trailing" id="ppt-EQ-vvJ"/>
                                 <constraint firstItem="seK-B4-u73" firstAttribute="leading" secondItem="k0D-xm-fAo" secondAttribute="leading" id="y0t-9H-gLe"/>
@@ -137,7 +149,7 @@
                 <constraint firstItem="Zbi-TO-QHj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ska-4b-SzG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-622" y="-132"/>
+            <point key="canvasLocation" x="-347" y="-444"/>
         </view>
     </objects>
     <resources>

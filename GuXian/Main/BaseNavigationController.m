@@ -29,7 +29,7 @@
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     // UIControlStateNormal
     NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
-    itemAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    itemAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     itemAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
     [item setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
     // UIControlStateDisabled

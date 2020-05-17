@@ -10,6 +10,7 @@
 #import "TrainingController.h"
 #import "ExamListCell.h"
 #import "ExamDetailController.h"
+#import "TrainingPageController.h"
 
 @interface TrainingController ()
 
@@ -47,5 +48,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.navigationController pushViewController:[[ExamDetailController alloc] init] animated:YES];
 }
+
+- (IBAction)buttonClick:(UIButton *)sender {
+    [self.navigationController pushViewController:TrainingPageController.new animated:YES];
+}
+
 
 @end

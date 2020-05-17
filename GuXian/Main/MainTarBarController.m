@@ -56,12 +56,12 @@
     [self addChildViewController:@"TrainingController" tabbarItemName:@"题库" tarbarImg:@"Training"];
     
     //个人中心
-    [self addChildViewController:@"UIViewController" tabbarItemName:@"我" tarbarImg:@"PersonalCenter"];
+    [self addChildViewController:@"PersonalCenterController" tabbarItemName:@"我" tarbarImg:@"PersonalCenter"];
 }
 
 - (void)addChildViewController:(NSString *)controllerName tabbarItemName:(NSString *)tabbarItemName tarbarImg:(NSString *)imgName{
     UIViewController *viewController = [[NSClassFromString(controllerName) alloc] init];
-    viewController.view.backgroundColor = UIColor.whiteColor;
+//    viewController.view.backgroundColor = UIColor.whiteColor;
     viewController.tabBarItem.title = tabbarItemName;
     UIImage *imgFromImgAsset = [[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     UIImage *defaultImg = [[imgFromImgAsset redrawWithColor:UIColor.blackColor] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
