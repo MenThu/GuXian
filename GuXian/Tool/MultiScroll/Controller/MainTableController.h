@@ -17,6 +17,7 @@
 @property (nonatomic, assign, readonly) CGFloat headHeight;
 @property (nonatomic, strong, readonly) UIView *segmentView;
 @property (nonatomic, assign, readonly) CGFloat segmentHeight;
+@property (nonatomic, strong, readonly) NSArray <ContentController *> *contentControllerArray;
 
 - (instancetype)initWith:(UIView *)headView
               headHeight:(CGFloat)headHeight

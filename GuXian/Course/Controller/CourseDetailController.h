@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CourseDetailController : MainTableController
 
+/// 系列ID
+@property (nonatomic, strong) NSString *seriesId;
+
 @end
 
 NS_ASSUME_NONNULL_END

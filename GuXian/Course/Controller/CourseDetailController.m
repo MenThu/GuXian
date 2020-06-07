@@ -14,6 +14,10 @@
 #import "CourseDetailSegmentView.h"
 #import "CommonHead.h"
 #import <UIView+WebVideoCache.h>
+#import "NetWorkManager+Extend.h"
+#import "CourseDetailModel.h"
+#import "DeviceManager.h"
+#import <UIImageView+WebCache.h>
 
 @interface CourseDetailController ()
 
@@ -22,6 +26,11 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *buyButtonHeight;
 @property (nonatomic, assign) BOOL isBuyButtonShow;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bakcButtonTopSpace;
+@property (nonatomic, strong) CourseDetailModel *detailModel;
+@property (nonatomic, weak) CourseDetailHeadView *detailHeadView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buybuttonHeight;
+@property (weak, nonatomic) IBOutlet UIImageView *videoPlaceholdView;
 
 @end
 
@@ -36,15 +45,29 @@
         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:page inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
     };
     CourseVideoListController *controller1 = [[CourseVideoListController alloc] init];
-    controller1.clickVideoListCallBack = ^(id  _Nonnull model) {
+    controller1.clickVideoListCallBack = ^(CouseListModel * _Nonnull model) {
         @strongify(self);
-        [self playVideo];
+        [self playVideoWithUrl:model.url];
     };
     CourseTextInstruController *controller2 = [[CourseTextInstruController alloc] init];
     NSArray <ContentController *> *controllerArrays = @[controller1, controller2];
-    if (self = [super initWith:[CourseDetailHeadView loadFromXib] headHeight:110 segmentView:segmentView segmentHeight:60 contentController:controllerArrays]) {
+    CourseDetailHeadView *detailHeadView = [CourseDetailHeadView loadFromXib];
+    if (self = [super initWith:(_detailHeadView = detailHeadView) headHeight:110 segmentView:segmentView segmentHeight:60 contentController:controllerArrays]) {
     }
     return self;
+}
+
+- (void)setSeriesId:(NSString *)seriesId{
+    _seriesId = seriesId;
+    [NetWorkManager courseSelectList:self.seriesId toastView:self.view callBack:^(BOOL isSucc, CourseDetailModel * _Nullable detailModel) {
+        self.detailModel = detailModel;
+        self.detailHeadView.model = detailModel.series;
+        CourseVideoListController *videoListController = (CourseVideoListController *)self.contentControllerArray.firstObject;
+        videoListController.tableSource = detailModel.courses;
+        CourseTextInstruController *intruductionController = (CourseTextInstruController *)self.contentControllerArray.lastObject;
+        intruductionController.courseDesc = detailModel.series.series_desc;
+        [self.videoPlaceholdView sd_setImageWithURL:[NSURL URLWithString:detailModel.series.picture]];
+    }];
 }
 
 - (void)viewDidLoad {
@@ -80,6 +103,8 @@
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     layout.itemSize = CGSizeMake(scrollViewWidth, scrollViewHeight-self.segmentHeight);
     self.collectionView.frame = CGRectMake(0, CGRectGetMaxY(self.segmentView.frame), scrollViewWidth, layout.itemSize.height);
+    self.bakcButtonTopSpace.constant = getStatusBarHeight()+10;
+    self.buybuttonHeight.constant = bottomHeight()+50;
 }
 
 - (IBAction)buyAction:(UIButton *)sender{
@@ -90,9 +115,9 @@
     segmentView.selectIndex = currentPage;
 }
 
-- (void)playVideo{
-    NSString *videoString = @"https://mvvideo2.meitudata.com/576bc2fc91ef22121.mp4";
-    [self.playerView jp_playVideoWithURL:[NSURL URLWithString:videoString]
+- (void)playVideoWithUrl:(NSString *)url{
+    NSString *videoString = url;
+    [self.videoPlaceholdView jp_playVideoWithURL:[NSURL URLWithString:videoString]
                       bufferingIndicator:nil
                              controlView:nil
                             progressView:nil

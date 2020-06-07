@@ -38,16 +38,26 @@ kSingleM
     NSData *data = (NSData *)[[DataManager shareInstance].personalCache objectForKey:ACCOUNT];
     if (data && data.length > 0) {
         NSDictionary*jsonDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        UserInfo *userInfo = [UserInfo mj_objectWithKeyValues:jsonDict];
-        return userInfo;
+        [UserInfo.shareInstance mj_setKeyValues:jsonDict];
+        return UserInfo.shareInstance;
     }else{
         return nil;
     }
 }
 
-+ (void)savePersonData:(UserInfo *)personInfo callBack:(MethodCallBack)callBack{
++ (void)login:(UserInfo *)personInfo callBack:(MethodCallBack)callBack{
     NSData *jsonData = personInfo.mj_JSONData;
     [[DataManager shareInstance].personalCache setObject:jsonData forKey:ACCOUNT withBlock:^{
+        if (callBack) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                callBack(0, nil, nil);
+            });
+        }
+    }];
+}
+
++ (void)logoutWithCallBack:(MethodCallBack)callBack{
+    [DataManager.shareInstance.personalCache setObject:nil forKey:ACCOUNT withBlock:^{
         if (callBack) {
             callBack(0, nil, nil);
         }

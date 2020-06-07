@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CourseTextInstruController : ContentController
 
+@property (nonatomic, strong) NSString *courseDesc;
+
 @end
 
 NS_ASSUME_NONNULL_END

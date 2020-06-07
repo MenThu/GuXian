@@ -8,10 +8,23 @@
 
 #import "CourseDetailHeadView.h"
 
+@interface CourseDetailHeadView ()
+
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *courseDesc;
+@property (weak, nonatomic) IBOutlet UILabel *pricelLabel;
+
+@end
+
 @implementation CourseDetailHeadView
 
-- (void)awakeFromNib{
-    [super awakeFromNib];
+- (void)setModel:(CourseSeriesModel *)model{
+    _model = model;
+    self.title.text = model.series_title;
+    self.courseDesc.text = model.series_desc;
+    self.pricelLabel.text = [NSString stringWithFormat:@"￥%.1f", model.series_price];
 }
+
+
 
 @end

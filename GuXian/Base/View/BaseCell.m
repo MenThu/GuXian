@@ -21,7 +21,9 @@
     return self;
 }
 
-- (void)configCellContentView{}
+- (void)configCellContentView{
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+}
 
 - (CGFloat)getCellHeightIn:(CGFloat)width withModel:(__kindof BaseCellModel *)model{
     NSAssert(NO, @"子类需要复写此方法");

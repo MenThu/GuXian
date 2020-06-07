@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CourseDetailModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CourseDetailHeadView : UIView
+
+@property (nonatomic, weak) CourseSeriesModel *model;
 
 @end
 

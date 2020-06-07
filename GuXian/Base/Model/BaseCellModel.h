@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import "BaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseCellModel : NSObject
+@interface BaseCellModel : BaseModel
 
 /// cell宽度
 @property (nonatomic, assign) CGFloat cellWidth;

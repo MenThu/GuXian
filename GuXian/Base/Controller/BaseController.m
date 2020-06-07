@@ -10,19 +10,35 @@
 #import "Masonry.h"
 #import "CommonHead.h"
 
-@interface BaseController ()
+@interface BaseController () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, assign) BOOL originNavibarHiddenStatus;
+@property (nonatomic, weak) UITapGestureRecognizer *tapGesture;
 
 @end
 
 @implementation BaseController
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    if ([NSStringFromClass(touch.view.class) isEqualToString:@"UITableViewCellContentView"]) {
+        return NO;
+    }
+    return YES;
+}
+
+- (void)tapView:(UIGestureRecognizer *)gesture{
+    [self.view endEditing:YES];
+}
 
 - (void)viewDidLoad{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self->_isNavibarHidden = NO;
     self.originNavibarHiddenStatus = self.navigationController.navigationBar.isHidden;
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapView:)];
+    tapGesture.delegate = self;
+    [self.view addGestureRecognizer:(_tapGesture = tapGesture)];
     
     // 自定义返回按钮
     if (self.navigationController &&
@@ -62,10 +78,10 @@
     [self.navigationController setNavigationBarHidden:self->_isNavibarHidden animated:animated];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [super touchesBegan:touches withEvent:event];
-    [self.view endEditing:YES];
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    [super touchesBegan:touches withEvent:event];
+//    [self.view endEditing:YES];
+//}
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

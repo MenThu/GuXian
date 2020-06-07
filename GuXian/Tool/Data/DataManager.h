@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 kSingleH
 
 + (UserInfo *)getLoginInfo;
-+ (void)savePersonData:(UserInfo *)personInfo callBack:(MethodCallBack)callBack;
++ (void)login:(UserInfo *)personInfo callBack:(MethodCallBack)callBack;
++ (void)logoutWithCallBack:(MethodCallBack)callBack;
 
 @end
 

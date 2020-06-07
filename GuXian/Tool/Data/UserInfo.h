@@ -15,8 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 kSingleH
 
-@property (nonatomic, strong) NSString *phoneNum;
-@property (nonatomic, strong) NSString *nickName;
+@property (nonatomic, strong) NSString *addtime;
+@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *head_img;
+@property (nonatomic, strong) NSString *user_id;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *openid;
 
 @end
 

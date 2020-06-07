@@ -7,7 +7,15 @@
 //
 
 #import "BaseCellModel.h"
+#import <UIKit/UIKit.h>
 
 @implementation BaseCellModel
+
+- (instancetype)init{
+    if (self = [super init]) {
+        self.cellWidth = UIScreen.mainScreen.bounds.size.width;
+    }
+    return self;
+}
 
 @end

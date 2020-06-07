@@ -23,8 +23,12 @@
 		69156FBF2460173100B93D0A /* CourseDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FBE2460173100B93D0A /* CourseDetailHeadView.m */; };
 		69156FC12460173900B93D0A /* CourseDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69156FC02460173900B93D0A /* CourseDetailHeadView.xib */; };
 		69156FC42460185000B93D0A /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FC32460185000B93D0A /* UIView+Extend.m */; };
-		69156FE424601D8C00B93D0A /* CourseVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69156FE224601D8C00B93D0A /* CourseVideoListCell.m */; };
-		69156FE524601D8C00B93D0A /* CourseVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */; };
+		691A760E248D116500A90AE7 /* CourseVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 691A760C248D116500A90AE7 /* CourseVideoListCell.m */; };
+		691A760F248D116500A90AE7 /* CourseVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691A760D248D116500A90AE7 /* CourseVideoListCell.xib */; };
+		695402122482508500EBD23D /* UIViewController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 695402112482508500EBD23D /* UIViewController+Extend.m */; };
+		695402152482513800EBD23D /* AlterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 695402142482513800EBD23D /* AlterModel.m */; };
+		6954023D24825D7C00EBD23D /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6954023C24825D7C00EBD23D /* NetWorkManager.m */; };
+		695402402482623400EBD23D /* NetWorkManager+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6954023F2482623400EBD23D /* NetWorkManager+Extend.m */; };
 		697D2B9B2461537B004EEDCF /* CourseVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2B9A2461537B004EEDCF /* CourseVideoListController.m */; };
 		697D2B9E2461546E004EEDCF /* CourseListVideoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2B9D2461546E004EEDCF /* CourseListVideoTableView.m */; };
 		697D2BA1246155A9004EEDCF /* CourseTextInstruController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2BA0246155A9004EEDCF /* CourseTextInstruController.m */; };
@@ -32,6 +36,10 @@
 		697D2BA6246157DF004EEDCF /* CourseDetailSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D2BA5246157DF004EEDCF /* CourseDetailSegmentView.xib */; };
 		697D2BAA24617117004EEDCF /* TrainingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D2BA824617117004EEDCF /* TrainingController.m */; };
 		697D2BAB24617117004EEDCF /* TrainingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D2BA924617117004EEDCF /* TrainingController.xib */; };
+		698FCC6C248CD92E00D09BB3 /* JobCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FCC6B248CD92E00D09BB3 /* JobCellModel.m */; };
+		698FCC6F248CDBAA00D09BB3 /* NSObject+HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FCC6E248CDBAA00D09BB3 /* NSObject+HttpRequest.m */; };
+		698FCC72248CF52E00D09BB3 /* CourseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FCC71248CF52E00D09BB3 /* CourseDetailModel.m */; };
+		698FCC75248CFC6400D09BB3 /* CouseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698FCC74248CFC6400D09BB3 /* CouseListModel.m */; };
 		69A91AF9246175A000C06639 /* ExamCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AF7246175A000C06639 /* ExamCellModel.m */; };
 		69A91AFC246175A800C06639 /* ExamListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AFA246175A800C06639 /* ExamListCell.m */; };
 		69A91B002461778200C06639 /* ExamDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A91AFE2461778200C06639 /* ExamDetailController.m */; };
@@ -45,7 +53,6 @@
 		69ADB288245D283F0019B31E /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ADB286245D283F0019B31E /* LoginController.xib */; };
 		69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2B8245D3AD00019B31E /* DeviceManager.m */; };
 		69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2BB245D3E570019B31E /* NSString+Extend.m */; };
-		69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2C1245D3F870019B31E /* UIView+Toast.m */; };
 		69ADB2D4245D5E4D0019B31E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CD245D5E4D0019B31E /* BaseNavigationController.m */; };
 		69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CE245D5E4D0019B31E /* ViewController.m */; };
 		69ADB2D6245D5E4D0019B31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADB2CF245D5E4D0019B31E /* main.m */; };
@@ -113,9 +120,17 @@
 		69156FC02460173900B93D0A /* CourseDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseDetailHeadView.xib; sourceTree = "<group>"; };
 		69156FC22460185000B93D0A /* UIView+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
 		69156FC32460185000B93D0A /* UIView+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
-		69156FE124601D8C00B93D0A /* CourseVideoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseVideoListCell.h; sourceTree = "<group>"; };
-		69156FE224601D8C00B93D0A /* CourseVideoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseVideoListCell.m; sourceTree = "<group>"; };
-		69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseVideoListCell.xib; sourceTree = "<group>"; };
+		691A760B248D116500A90AE7 /* CourseVideoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseVideoListCell.h; sourceTree = "<group>"; };
+		691A760C248D116500A90AE7 /* CourseVideoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseVideoListCell.m; sourceTree = "<group>"; };
+		691A760D248D116500A90AE7 /* CourseVideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseVideoListCell.xib; sourceTree = "<group>"; };
+		695402102482508500EBD23D /* UIViewController+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extend.h"; sourceTree = "<group>"; };
+		695402112482508500EBD23D /* UIViewController+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extend.m"; sourceTree = "<group>"; };
+		695402132482513800EBD23D /* AlterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlterModel.h; sourceTree = "<group>"; };
+		695402142482513800EBD23D /* AlterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterModel.m; sourceTree = "<group>"; };
+		6954023B24825D7C00EBD23D /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		6954023C24825D7C00EBD23D /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		6954023E2482623400EBD23D /* NetWorkManager+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetWorkManager+Extend.h"; sourceTree = "<group>"; };
+		6954023F2482623400EBD23D /* NetWorkManager+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetWorkManager+Extend.m"; sourceTree = "<group>"; };
 		697D2B992461537B004EEDCF /* CourseVideoListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseVideoListController.h; sourceTree = "<group>"; };
 		697D2B9A2461537B004EEDCF /* CourseVideoListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseVideoListController.m; sourceTree = "<group>"; };
 		697D2B9C2461546E004EEDCF /* CourseListVideoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseListVideoTableView.h; sourceTree = "<group>"; };
@@ -128,6 +143,14 @@
 		697D2BA724617117004EEDCF /* TrainingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainingController.h; sourceTree = "<group>"; };
 		697D2BA824617117004EEDCF /* TrainingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingController.m; sourceTree = "<group>"; };
 		697D2BA924617117004EEDCF /* TrainingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingController.xib; sourceTree = "<group>"; };
+		698FCC6A248CD92E00D09BB3 /* JobCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCellModel.h; sourceTree = "<group>"; };
+		698FCC6B248CD92E00D09BB3 /* JobCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCellModel.m; sourceTree = "<group>"; };
+		698FCC6D248CDBAA00D09BB3 /* NSObject+HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HttpRequest.h"; sourceTree = "<group>"; };
+		698FCC6E248CDBAA00D09BB3 /* NSObject+HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HttpRequest.m"; sourceTree = "<group>"; };
+		698FCC70248CF52E00D09BB3 /* CourseDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseDetailModel.h; sourceTree = "<group>"; };
+		698FCC71248CF52E00D09BB3 /* CourseDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseDetailModel.m; sourceTree = "<group>"; };
+		698FCC73248CFC6400D09BB3 /* CouseListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CouseListModel.h; sourceTree = "<group>"; };
+		698FCC74248CFC6400D09BB3 /* CouseListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CouseListModel.m; sourceTree = "<group>"; };
 		69A91AF7246175A000C06639 /* ExamCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamCellModel.m; sourceTree = "<group>"; };
 		69A91AF8246175A000C06639 /* ExamCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamCellModel.h; sourceTree = "<group>"; };
 		69A91AFA246175A800C06639 /* ExamListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamListCell.m; sourceTree = "<group>"; };
@@ -152,8 +175,6 @@
 		69ADB2B8245D3AD00019B31E /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
 		69ADB2BA245D3E570019B31E /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		69ADB2BB245D3E570019B31E /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
-		69ADB2C0245D3F870019B31E /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
-		69ADB2C1245D3F870019B31E /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		69ADB2CB245D5E4D0019B31E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69ADB2CC245D5E4D0019B31E /* MainTarBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTarBarController.h; sourceTree = "<group>"; };
 		69ADB2CD245D5E4D0019B31E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
@@ -364,6 +385,10 @@
 		69ADB27B245D1D540019B31E /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				6954023B24825D7C00EBD23D /* NetWorkManager.h */,
+				6954023C24825D7C00EBD23D /* NetWorkManager.m */,
+				6954023E2482623400EBD23D /* NetWorkManager+Extend.h */,
+				6954023F2482623400EBD23D /* NetWorkManager+Extend.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -371,14 +396,16 @@
 		69ADB283245D20500019B31E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				69ADB2C0245D3F870019B31E /* UIView+Toast.h */,
-				69ADB2C1245D3F870019B31E /* UIView+Toast.m */,
 				69ADB2BA245D3E570019B31E /* NSString+Extend.h */,
 				69ADB2BB245D3E570019B31E /* NSString+Extend.m */,
 				69ADB2D9245D62700019B31E /* UIImage+Extend.h */,
 				69ADB2DA245D62700019B31E /* UIImage+Extend.m */,
 				69156FC22460185000B93D0A /* UIView+Extend.h */,
 				69156FC32460185000B93D0A /* UIView+Extend.m */,
+				695402102482508500EBD23D /* UIViewController+Extend.h */,
+				695402112482508500EBD23D /* UIViewController+Extend.m */,
+				698FCC6D248CDBAA00D09BB3 /* NSObject+HttpRequest.h */,
+				698FCC6E248CDBAA00D09BB3 /* NSObject+HttpRequest.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -461,6 +488,8 @@
 		69ADB2DC245D67100019B31E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				698FCC6A248CD92E00D09BB3 /* JobCellModel.h */,
+				698FCC6B248CD92E00D09BB3 /* JobCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -523,11 +552,11 @@
 				697D2BA2246157D5004EEDCF /* CourseDetailSegmentView.h */,
 				697D2BA3246157D5004EEDCF /* CourseDetailSegmentView.m */,
 				697D2BA5246157DF004EEDCF /* CourseDetailSegmentView.xib */,
-				69156FE124601D8C00B93D0A /* CourseVideoListCell.h */,
-				69156FE224601D8C00B93D0A /* CourseVideoListCell.m */,
-				69156FE324601D8C00B93D0A /* CourseVideoListCell.xib */,
 				697D2B9C2461546E004EEDCF /* CourseListVideoTableView.h */,
 				697D2B9D2461546E004EEDCF /* CourseListVideoTableView.m */,
+				691A760B248D116500A90AE7 /* CourseVideoListCell.h */,
+				691A760C248D116500A90AE7 /* CourseVideoListCell.m */,
+				691A760D248D116500A90AE7 /* CourseVideoListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -537,6 +566,10 @@
 			children = (
 				69156F1C245FD22000B93D0A /* CourseCellModel.h */,
 				69156F1D245FD22000B93D0A /* CourseCellModel.m */,
+				698FCC70248CF52E00D09BB3 /* CourseDetailModel.h */,
+				698FCC71248CF52E00D09BB3 /* CourseDetailModel.m */,
+				698FCC73248CFC6400D09BB3 /* CouseListModel.h */,
+				698FCC74248CFC6400D09BB3 /* CouseListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -634,6 +667,8 @@
 				69156F14245FCD6000B93D0A /* BaseCellModel.m */,
 				69FFC6642471313D0051170C /* BaseModel.h */,
 				69FFC6652471313D0051170C /* BaseModel.m */,
+				695402132482513800EBD23D /* AlterModel.h */,
+				695402142482513800EBD23D /* AlterModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -758,10 +793,10 @@
 				69ADB305245EA7BC0019B31E /* city.plist in Resources */,
 				69A91B012461778200C06639 /* ExamDetailController.xib in Resources */,
 				69ADB2E6245D67570019B31E /* FindJobController.xib in Resources */,
+				691A760F248D116500A90AE7 /* CourseVideoListCell.xib in Resources */,
 				69FFC7AF2471666B0051170C /* PersonalDetailController.xib in Resources */,
 				697D2BA6246157DF004EEDCF /* CourseDetailSegmentView.xib in Resources */,
 				69ADB260245D186C0019B31E /* Assets.xcassets in Resources */,
-				69156FE524601D8C00B93D0A /* CourseVideoListCell.xib in Resources */,
 				69ADB32F245EC6CC0019B31E /* JobCell.xib in Resources */,
 				69ADB330245EC6CC0019B31E /* CityCell.xib in Resources */,
 				69FFC7B4247167F80051170C /* SettingController.xib in Resources */,
@@ -827,12 +862,14 @@
 				69ADB30E245EA8FB0019B31E /* BaseTableViewController.m in Sources */,
 				697D2B9B2461537B004EEDCF /* CourseVideoListController.m in Sources */,
 				69ADB2DB245D62700019B31E /* UIImage+Extend.m in Sources */,
+				695402152482513800EBD23D /* AlterModel.m in Sources */,
 				697D2BA1246155A9004EEDCF /* CourseTextInstruController.m in Sources */,
 				69ADB2D5245D5E4D0019B31E /* ViewController.m in Sources */,
 				69ADB334245EC6EF0019B31E /* CitySectionHead.m in Sources */,
 				69FFC66F2471328E0051170C /* TrainingPageCell.m in Sources */,
 				69FFC672247133A40051170C /* ExamDetailModel.m in Sources */,
 				69156F20245FD22000B93D0A /* CourseCellModel.m in Sources */,
+				698FCC6C248CD92E00D09BB3 /* JobCellModel.m in Sources */,
 				69156FB32460116400B93D0A /* MainControllerView.m in Sources */,
 				69FFC676247136F80051170C /* PersonalCenterController.m in Sources */,
 				69ADB27E245D1D600019B31E /* DataManager.m in Sources */,
@@ -840,34 +877,39 @@
 				69ADB32E245EC6CC0019B31E /* JobCell.m in Sources */,
 				69156FB12460116400B93D0A /* MainTableController.m in Sources */,
 				69A91B002461778200C06639 /* ExamDetailController.m in Sources */,
+				6954023D24825D7C00EBD23D /* NetWorkManager.m in Sources */,
 				69FFC66C2471326F0051170C /* BaseCollectionCell.m in Sources */,
 				69FFC663247130C70051170C /* TrainingPageController.m in Sources */,
 				69156F12245FCC8E00B93D0A /* BaseCell.m in Sources */,
 				69ADB2F5245D75EB0019B31E /* UITableView+PlaceHoldView.m in Sources */,
 				69156FC42460185000B93D0A /* UIView+Extend.m in Sources */,
+				698FCC6F248CDBAA00D09BB3 /* NSObject+HttpRequest.m in Sources */,
 				69A91AF9246175A000C06639 /* ExamCellModel.m in Sources */,
 				69ADB2BC245D3E570019B31E /* NSString+Extend.m in Sources */,
+				691A760E248D116500A90AE7 /* CourseVideoListCell.m in Sources */,
 				69ADB340245EEDA60019B31E /* BaseWebController.m in Sources */,
 				69ADB2D8245D5E4D0019B31E /* MainTarBarController.m in Sources */,
 				697D2BAA24617117004EEDCF /* TrainingController.m in Sources */,
 				697D2BA4246157D5004EEDCF /* CourseDetailSegmentView.m in Sources */,
 				69156FBB2460156700B93D0A /* CourseDetailController.m in Sources */,
+				698FCC72248CF52E00D09BB3 /* CourseDetailModel.m in Sources */,
 				69ADB30D245EA8FB0019B31E /* BaseController.m in Sources */,
 				69ADB2E5245D67570019B31E /* FindJobController.m in Sources */,
 				69156F0F245FCB8D00B93D0A /* CourceListCell.m in Sources */,
+				695402122482508500EBD23D /* UIViewController+Extend.m in Sources */,
 				69FFC66024712F3D0051170C /* BaseCollectionController.m in Sources */,
 				69156F15245FCD6000B93D0A /* BaseCellModel.m in Sources */,
-				69ADB2C2245D3F870019B31E /* UIView+Toast.m in Sources */,
 				69FFC7AE2471666B0051170C /* PersonalDetailController.m in Sources */,
-				69156FE424601D8C00B93D0A /* CourseVideoListCell.m in Sources */,
 				69A91AFC246175A800C06639 /* ExamListCell.m in Sources */,
 				69156FBF2460173100B93D0A /* CourseDetailHeadView.m in Sources */,
 				69156FB22460116400B93D0A /* ContentController.m in Sources */,
+				695402402482623400EBD23D /* NetWorkManager+Extend.m in Sources */,
 				69156F04245FC74700B93D0A /* JobDetailWebController.m in Sources */,
 				69ADB2D4245D5E4D0019B31E /* BaseNavigationController.m in Sources */,
 				69ADB302245EA7660019B31E /* SelectCityController.m in Sources */,
 				69ADB315245EAAFE0019B31E /* LocationManager.m in Sources */,
 				69ADB281245D1E1F0019B31E /* UserInfo.m in Sources */,
+				698FCC75248CFC6400D09BB3 /* CouseListModel.m in Sources */,
 				697D2B9E2461546E004EEDCF /* CourseListVideoTableView.m in Sources */,
 				69ADB2B9245D3AD00019B31E /* DeviceManager.m in Sources */,
 				69156F07245FC8A700B93D0A /* CourseListController.m in Sources */,

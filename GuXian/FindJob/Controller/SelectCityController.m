@@ -140,8 +140,11 @@ static CGFloat const INDEX_VIEW_WIDTH = 25;
     tempLabel.textAlignment = NSTextAlignmentCenter;
     
     UILabel *firstHotCity = [self getHotCityLabelWith:@"广州"];
+    firstHotCity.tag = 0;
     UILabel *secondHotCity = [self getHotCityLabelWith:@"杭州"];
+    secondHotCity.tag = 1;
     UILabel *thirdHotCity = [self getHotCityLabelWith:@"深圳"];
+    thirdHotCity.tag = 2;
     
     UIView *hotCityView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1000, 1000)];
     hotCityView.backgroundColor = RGBA(240, 243, 246, 1);
@@ -175,7 +178,6 @@ static CGFloat const INDEX_VIEW_WIDTH = 25;
     }];
     
     [thirdHotCity mas_makeConstraints:^(MASConstraintMaker *make) {
-        //        @strongify(self);
         make.left.equalTo(secondHotCity.mas_right).offset(10);
         make.centerY.equalTo(firstHotCity);
         make.width.height.equalTo(firstHotCity);
@@ -203,7 +205,17 @@ static CGFloat const INDEX_VIEW_WIDTH = 25;
     hotCityLabel.textAlignment = NSTextAlignmentCenter;
     hotCityLabel.layer.cornerRadius = 25.f;
     hotCityLabel.layer.masksToBounds = YES;
+    hotCityLabel.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tapLabelGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLabel:)];
+    [hotCityLabel addGestureRecognizer:tapLabelGesture];
+    
     return hotCityLabel;
+}
+
+- (void)tapLabel:(UITapGestureRecognizer *)gesture{
+    UILabel *label = (UILabel *)gesture.view;
+    [self popWithCityName:label.text];
 }
 
 - (void)viewDidLayoutSubviews{
@@ -246,6 +258,19 @@ static CGFloat const INDEX_VIEW_WIDTH = 25;
     }
     cell.textLabel.text = self.citySource[self.allKeys[indexPath.section]][indexPath.row].cityName;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *cityName = self.citySource[self.allKeys[indexPath.section]][indexPath.row].cityName;
+    [self popWithCityName:cityName];
+}
+
+- (void)popWithCityName:(NSString *)cityName{
+    if (self.callBack) {
+        self.callBack(cityName);
+        self.callBack = nil;
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (UILabel *)hintLabel{

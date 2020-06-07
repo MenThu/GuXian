@@ -38,7 +38,7 @@
 @property (nonatomic, strong, readwrite) UIView *wholeTopView;
 @property (nonatomic, assign) CGFloat wholeTopViewHeight;
 @property (nonatomic, weak, readwrite) UICollectionView *collectionView;
-@property (nonatomic, strong) NSArray <ContentController *> *contentControllerArray;
+@property (nonatomic, strong, readwrite) NSArray <ContentController *> *contentControllerArray;
 @property (nonatomic, assign) NSInteger currentPage;
 @property (nonatomic, strong) NSMutableArray <NSNumber *> *recordOffsetArray;
 @property (nonatomic, assign) CGSize screenSize;

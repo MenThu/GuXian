@@ -16,6 +16,9 @@
 #import "Masonry.h"
 #import "SelectCityController.h"
 #import "JobDetailWebController.h"
+#import "NetWorkManager+Extend.h"
+#import "NSString+Extend.h"
+#import "CommonHead.h"
 
 @interface FindJobController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -35,7 +38,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *moreCategory;
 @property (nonatomic, strong) NSArray <UIButton *> *buttonArray;
 
-@property (nonatomic, strong) NSMutableArray <NSNumber *> *tableSource;
+@property (nonatomic, strong) NSMutableArray <JobCellModel *> *tableSource;
 
 @end
 
@@ -60,7 +63,7 @@
     [self clickCategoryButton:self.allButton];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"JobCell" bundle:nil] forCellReuseIdentifier:@"JobCell"];
-    self.tableSource = [[NSMutableArray alloc] init];
+    self.tableSource = [NSMutableArray array];
     [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.bottom.right.equalTo(self.view);
@@ -87,15 +90,21 @@
         sender.selected = YES;
     }
     if (sender.tag == 4) {
-        [self.navigationController pushViewController:[[SelectCityController alloc] init] animated:YES];
+        SelectCityController *cityViewController = [[SelectCityController alloc] init];
+        cityViewController.callBack = ^(NSString * _Nullable cityName) {
+            NSLog(@"cityName=[%@]", cityName);
+        };
+        [self.navigationController pushViewController:cityViewController animated:YES];
     }
+}
+
+- (void)loadJobsWithPageNo:(NSInteger)pageNo callBack:(dispatch_block_t)callBack{
+//    [NetWorkManager jobsSelectList:nil pageNo:0 toastView:self.view];
 }
 
 #pragma mark - OverWritte
 - (void)tapNoDataHintView{
-    for (NSInteger index = 0; index < 10; index ++) {
-        [self.tableSource addObject:@(0)];
-    }
+//    [NetWorkManager jobsSelectList:nil pageNo:0 toastView:self.view];
     [self.tableView reloadData];
     self.tableView.mj_footer.hidden = NO;
     self.tableView.mj_header.hidden = NO;
@@ -103,18 +112,12 @@
 
 - (void)dragTableViewHead{
     NSMutableArray *tableSource = @[].mutableCopy;
-    for (NSInteger index = 0; index < 10; index ++) {
-        [tableSource addObject:@(0)];
-    }
     self.tableSource = [NSMutableArray arrayWithArray:tableSource];
     [self.tableView reloadData];
     [self.tableView.mj_header endRefreshing];
 }
 
 - (void)dragTableViewFoot:(NSInteger)currentPageNo nextPageNo:(NSInteger)nextPageNo{
-    for (NSInteger index = 0; index < 10; index ++) {
-        [self.tableSource addObject:@(0)];
-    }
     [self.tableView reloadData];
     [self.tableView.mj_footer endRefreshing];
 }
@@ -131,6 +134,23 @@
     return YES;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    self.tableSource = nil;
+    [self.tableView reloadData];
+    [self.view endEditing:YES];
+    [NetWorkManager jobsSearchJob:textField.text.isExist ? textField.text : textField.placeholder toastView:self.view callBack:^(BOOL isSucc, NSArray<JobCellModel *> * _Nullable resultArray) {
+        if (isSucc) {
+            self.tableSource = [NSMutableArray arrayWithArray:resultArray];
+            [self.tableView reloadData];
+        }
+    }];
+    return YES;
+}
+
+- (IBAction)cancelSearchTextField:(UIButton *)sender {
+    self.searchTextField.text = nil;
+    [self.view endEditing:YES];
+}
 
 #pragma mark - TableView相关代理
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,6 +16,7 @@
                 <outlet property="customNaviBar" destination="wSW-j2-XCN" id="Q1e-ny-2UD"/>
                 <outlet property="phoneTextField" destination="WtS-0d-QgS" id="MhN-QP-wAi"/>
                 <outlet property="phoneUnderLine" destination="l3i-EI-kvt" id="xUf-xf-R8b"/>
+                <outlet property="protocolButton" destination="Hj7-pB-rYZ" id="Yu8-zD-yWj"/>
                 <outlet property="titleLabelHeight" destination="0TW-Uj-MjV" id="5MF-5w-FI5"/>
                 <outlet property="verifyCodeUnderLine" destination="XlE-0h-86N" id="HwX-Z7-3mb"/>
                 <outlet property="vertifyCodeTextField" destination="SmT-bp-3iw" id="vbv-ow-UTg"/>
@@ -168,6 +169,8 @@
                         <constraint firstAttribute="height" constant="20" id="NCW-TA-sjf"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="command" catalog="system"/>
+                    <state key="selected" image="Course"/>
                     <connections>
                         <action selector="agreeMentAction:" destination="-1" eventType="touchUpInside" id="IAU-2v-LPb"/>
                     </connections>
@@ -202,7 +205,7 @@
                 <constraint firstItem="wSW-j2-XCN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x97-0K-TRE"/>
                 <constraint firstItem="R8R-1g-ZcQ" firstAttribute="height" secondItem="bgi-lE-TP6" secondAttribute="height" id="yHr-i4-2Df"/>
             </constraints>
-            <point key="canvasLocation" x="-3199" y="-418"/>
+            <point key="canvasLocation" x="-4020" y="-597"/>
         </view>
         <view contentMode="scaleToFill" id="iZZ-sP-kyI">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -212,6 +215,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Course" width="25" height="25"/>
+        <image name="command" catalog="system" width="128" height="115"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
     </resources>
 </document>

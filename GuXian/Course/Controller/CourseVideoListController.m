@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     CourseListVideoTableView *tableView = [[CourseListVideoTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -32,17 +31,24 @@
     }];
 }
 
+- (void)setTableSource:(NSArray *)tableSource{
+    _tableSource = tableSource;
+    UITableView *tableView = (UITableView *)self.contentScrollView;
+    [tableView reloadData];
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self scrollViewScroll];
 }
 
 #pragma mark - TableView代理
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.tableSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CourseVideoListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CourseVideoListCell" forIndexPath:indexPath];
+    cell.model = self.tableSource[indexPath.row];
     return cell;
 }
 
@@ -52,7 +58,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.clickVideoListCallBack) {
-        self.clickVideoListCallBack(nil);
+        self.clickVideoListCallBack(self.tableSource[indexPath.row]);
     }
 }
 

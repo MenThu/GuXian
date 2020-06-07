@@ -14,9 +14,10 @@
 #import "DeviceManager.h"
 #import "NSString+Extend.h"
 #import "MainTarBarController.h"
-#import "UIView+Toast.h"
+#import "UIView+Extend.h"
 #import "DataManager.h"
 #import "UserInfo.h"
+#import "NetWorkManager+Extend.h"
 
 @interface LoginController () <UITextFieldDelegate>
 
@@ -31,6 +32,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *customBarTop;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLabelHeight;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (nonatomic, strong) NSString *userCode;
+@property (weak, nonatomic) IBOutlet UIButton *protocolButton;
 
 @end
 
@@ -80,6 +83,9 @@
           }];
     
     agreeMentLabel.attributedText = text;
+    
+    
+    self.userCode = self.vertifyCodeTextField.text = @"1000";
 }
 
 - (void)viewDidLayoutSubviews{
@@ -95,25 +101,34 @@
 }
 
 - (IBAction)sendVertifyAction:(UIButton *)sender {
+    [NetWorkManager userGetcode:self.phoneTextField.text toastView:self.view callBack:^(NSString * _Nullable userCode) {
+        self.userCode = userCode;
+    }];
 }
 
 - (IBAction)loginAction:(UIButton *)sender {
-    if (self.phoneTextField.text.isExist &&
-        self.phoneTextField.text.isPhoneNum &&
-        self.vertifyCodeTextField.text.isExist) {
-        UserInfo.shareInstance.phoneNum = self.phoneTextField.text;
-        [DataManager savePersonData:UserInfo.shareInstance callBack:^(NSInteger resultCode, id object, NSString *errMsg) {
-            NSLog(@"");
-        }];
-        UIApplication.sharedApplication.keyWindow.rootViewController = [[MainTarBarController alloc] init];
-    }else{
-        [self.view showToast:@"请验证输入信息" hideAfterSeconds:0.7];
+    if (!(self.phoneTextField.text.isExist && self.phoneTextField.text.isPhoneNum)) {
+        [self.view showToast:@"请输入正确的手机号" hideAfterSeconds:0.5];
+        return;
     }
+    if (!(self.vertifyCodeTextField.text.isExist && [self.vertifyCodeTextField.text isEqualToString:self.userCode])) {
+        [self.view showToast:@"请输入正确的验证码" hideAfterSeconds:0.5];
+        return;
+    }
+    if (!self.protocolButton.selected) {
+        [self.view showToast:@"请同意协议" hideAfterSeconds:0.5];
+        return;
+    }
+    [NetWorkManager userLogin:self.phoneTextField.text toastView:self.view callBack:^(BOOL isSucc) {
+        if (isSucc) {
+            UIApplication.sharedApplication.keyWindow.rootViewController = [[MainTarBarController alloc] init];
+        }
+    }];
 }
 
 - (IBAction)agreeMentAction:(UIButton *)sender {
+    sender.selected = !sender.selected;
 }
-
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     [self selectPhone:textField == self.phoneTextField];

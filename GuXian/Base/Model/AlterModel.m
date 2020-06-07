@@ -1,20 +1,19 @@
 //
-//  UserInfo.m
+//  AlterModel.m
 //  GuXian
 //
-//  Created by menthu on 2020/5/2.
+//  Created by menthu on 2020/5/30.
 //  Copyright © 2020 menthu. All rights reserved.
 //
 
-#import "UserInfo.h"
-#import <MJExtension.h>
+#import "AlterModel.h"
 
-@implementation UserInfo
-
-kSingleM
+@implementation AlterModel
 
 - (instancetype)init{
     if (self = [super init]) {
+        self.title = nil;
+        self.tag = 0;
     }
     return self;
 }

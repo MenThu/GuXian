@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,37 +9,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="CourseVideoListCell">
-            <rect key="frame" x="0.0" y="0.0" width="466" height="102"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="CourseVideoListCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="131"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="466" height="102"/>
+                <rect key="frame" x="0.0" y="0.0" width="341" height="131"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="amo-kf-LeB">
-                        <rect key="frame" x="10" y="41" width="20" height="20"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u99-Kx-97x">
+                        <rect key="frame" x="10" y="50.5" width="30" height="30"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="amo-kf-LeB" secondAttribute="height" id="1kS-rb-rcY"/>
-                            <constraint firstAttribute="width" constant="20" id="XY8-8v-YIk"/>
+                            <constraint firstAttribute="width" constant="30" id="237-7d-f64"/>
+                            <constraint firstAttribute="width" secondItem="u99-Kx-97x" secondAttribute="height" id="Aoc-Kq-bBO"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试第一节课测试第一节课测试第一节课测试第一节课测试第一节课测试第一节课" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-OM-DrE">
-                        <rect key="frame" x="40" y="42" width="416" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oG-Q1-vba">
+                        <rect key="frame" x="50" y="57" width="281" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Yob-OM-DrE" firstAttribute="leading" secondItem="amo-kf-LeB" secondAttribute="trailing" constant="10" id="0JJ-Im-IIM"/>
-                    <constraint firstAttribute="trailing" secondItem="Yob-OM-DrE" secondAttribute="trailing" constant="10" id="0au-dh-BLa"/>
-                    <constraint firstItem="amo-kf-LeB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AD5-wX-lRD"/>
-                    <constraint firstItem="Yob-OM-DrE" firstAttribute="centerY" secondItem="amo-kf-LeB" secondAttribute="centerY" id="EHi-Sk-h2T"/>
-                    <constraint firstItem="amo-kf-LeB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ydp-Fj-GBr"/>
+                    <constraint firstItem="u99-Kx-97x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C6I-a8-c4v"/>
+                    <constraint firstAttribute="trailing" secondItem="0oG-Q1-vba" secondAttribute="trailing" constant="10" id="EtO-TB-Mvc"/>
+                    <constraint firstItem="0oG-Q1-vba" firstAttribute="centerY" secondItem="u99-Kx-97x" secondAttribute="centerY" id="JhR-Xk-RuL"/>
+                    <constraint firstItem="0oG-Q1-vba" firstAttribute="leading" secondItem="u99-Kx-97x" secondAttribute="trailing" constant="10" id="Maa-Mo-GIJ"/>
+                    <constraint firstItem="u99-Kx-97x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hbo-AX-wn7"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-104" y="94"/>
+            <connections>
+                <outlet property="courseLabel" destination="0oG-Q1-vba" id="tfY-XJ-U8f"/>
+            </connections>
+            <point key="canvasLocation" x="-760" y="-182"/>
         </tableViewCell>
     </objects>
 </document>

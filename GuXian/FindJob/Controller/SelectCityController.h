@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SelectCityController : BaseTableViewController
 
+@property (nonatomic, copy) void (^ _Nullable callBack) (NSString * _Nullable cityName);
+
 @end
 
 NS_ASSUME_NONNULL_END

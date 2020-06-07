@@ -20,6 +20,7 @@
 @implementation ExamListCell
 
 - (void)configCellContentView{
+    [super configCellContentView];
     UILabel *titleLabel = [self getLabel];
     titleLabel.text = @"中国矿业大学2018年行政岗位面试真题";
     titleLabel.font = [UIFont systemFontOfSize:15];

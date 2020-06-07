@@ -1,20 +1,18 @@
 //
-//  UserInfo.m
+//  JobCellModel.m
 //  GuXian
 //
-//  Created by menthu on 2020/5/2.
+//  Created by menthu on 2020/6/7.
 //  Copyright © 2020 menthu. All rights reserved.
 //
 
-#import "UserInfo.h"
-#import <MJExtension.h>
+#import "JobCellModel.h"
 
-@implementation UserInfo
-
-kSingleM
+@implementation JobCellModel
 
 - (instancetype)init{
     if (self = [super init]) {
+        
     }
     return self;
 }

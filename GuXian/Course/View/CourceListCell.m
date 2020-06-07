@@ -62,10 +62,16 @@ static CGFloat const IMG_COVER_HEIGHT = 60.f;
 - (void)setCellModel:(BaseCellModel *)cellModel{
     [super setCellModel:cellModel];
     CourseCellModel *tempModel = (CourseCellModel *)cellModel;
-    [self.courseCoverImgView sd_setImageWithURL:[NSURL URLWithString:tempModel.imgConverUrl]];
-    self.titleLabel.text = tempModel.titleText;
+    [self.courseCoverImgView sd_setImageWithURL:[NSURL URLWithString:tempModel.picture]];
+    self.titleLabel.text = tempModel.series_title;
     self.detailLabelOne.text = tempModel.detailOneText;
     self.detailLabelTwo.text = tempModel.detailTwoText;
 }
 
 @end
+
+
+
+
+
+

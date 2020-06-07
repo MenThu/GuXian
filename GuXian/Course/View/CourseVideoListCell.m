@@ -2,23 +2,24 @@
 //  CourseVideoListCell.m
 //  GuXian
 //
-//  Created by menthu on 2020/5/4.
+//  Created by menthu on 2020/6/7.
 //  Copyright © 2020 menthu. All rights reserved.
 //
 
 #import "CourseVideoListCell.h"
 
+@interface CourseVideoListCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *courseLabel;
+
+
+@end
+
 @implementation CourseVideoListCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setModel:(CouseListModel *)model{
+    _model = model;
+    self.courseLabel.text = model.course_title;
 }
 
 @end

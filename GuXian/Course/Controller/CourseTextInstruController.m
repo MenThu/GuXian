@@ -31,12 +31,17 @@
     UILabel *label = UILabel.new;
     label.numberOfLines = 0;
     label.textColor = UIColor.grayColor;
-    label.text = @"测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介测试课程简介";
+    label.text = self.courseDesc;
     [self.scrollView addSubview:(_label = label)];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.equalTo(scrollView).offset(10);
         make.width.equalTo(self.view).offset(-20);
     }];
+}
+
+- (void)setCourseDesc:(NSString *)courseDesc{
+    _courseDesc = courseDesc;
+    self.label.text = courseDesc;
 }
 
 - (void)viewDidLayoutSubviews{

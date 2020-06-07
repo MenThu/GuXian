@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,9 +10,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseDetailController">
             <connections>
                 <outlet property="backButton" destination="2tT-KP-nLj" id="ygh-XZ-beI"/>
+                <outlet property="bakcButtonTopSpace" destination="sxE-97-YEq" id="1ss-wy-EeR"/>
                 <outlet property="buyButton" destination="gqd-VW-fWt" id="Pml-Qn-Phf"/>
                 <outlet property="buyButtonHeight" destination="Y7Z-QQ-gFI" id="8lZ-Tv-vSw"/>
+                <outlet property="buybuttonHeight" destination="Y7Z-QQ-gFI" id="OKl-4E-igD"/>
                 <outlet property="playerView" destination="GHv-nB-nI9" id="dba-MQ-UnX"/>
+                <outlet property="videoPlaceholdView" destination="gDp-wT-fNz" id="Fg9-ZI-LOb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,6 +31,9 @@
                         <constraint firstAttribute="width" secondItem="GHv-nB-nI9" secondAttribute="height" multiplier="16:9" id="wxa-ek-igj"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDp-wT-fNz">
+                    <rect key="frame" x="0.0" y="0.0" width="483" height="271.5"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tT-KP-nLj">
                     <rect key="frame" x="10" y="10" width="50" height="50"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,14 +62,23 @@
                 <constraint firstAttribute="bottom" secondItem="gqd-VW-fWt" secondAttribute="bottom" id="0my-u1-gsN"/>
                 <constraint firstItem="GHv-nB-nI9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4zl-Ti-MwY"/>
                 <constraint firstAttribute="trailing" secondItem="GHv-nB-nI9" secondAttribute="trailing" id="8FO-yt-LoK"/>
+                <constraint firstItem="gDp-wT-fNz" firstAttribute="top" secondItem="GHv-nB-nI9" secondAttribute="top" id="Fiu-62-isD"/>
                 <constraint firstItem="GHv-nB-nI9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gd3-YD-TuL"/>
                 <constraint firstAttribute="trailing" secondItem="gqd-VW-fWt" secondAttribute="trailing" id="KcZ-Wo-HHK"/>
+                <constraint firstItem="gDp-wT-fNz" firstAttribute="trailing" secondItem="GHv-nB-nI9" secondAttribute="trailing" id="Nt4-7I-ZfE"/>
                 <constraint firstItem="gqd-VW-fWt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qva-1k-Iy4"/>
+                <constraint firstItem="gDp-wT-fNz" firstAttribute="bottom" secondItem="GHv-nB-nI9" secondAttribute="bottom" id="ZMV-th-gHL"/>
+                <constraint firstItem="gDp-wT-fNz" firstAttribute="leading" secondItem="GHv-nB-nI9" secondAttribute="leading" id="eEE-z8-PpX"/>
                 <constraint firstItem="2tT-KP-nLj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rwN-Qy-MPV"/>
                 <constraint firstItem="2tT-KP-nLj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="sxE-97-YEq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-444" y="-166"/>
+            <point key="canvasLocation" x="191" y="-657"/>
         </view>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lXR-EY-xEI">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="677" y="-647"/>
+        </imageView>
     </objects>
 </document>

@@ -7,6 +7,10 @@
 //
 
 #import "SettingController.h"
+#import "UIViewController+Extend.h"
+#import "DataManager.h"
+#import "LoginController.h"
+#import "AppDelegate.h"
 
 @interface SettingController ()
 
@@ -16,17 +20,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
+    self.navigationItem.title = @"设置";
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)logout:(UITapGestureRecognizer *)sender {
+    AlterModel *cancelModel = [[AlterModel alloc] init];
+    cancelModel.title = @"取消";
+    cancelModel.tag = 0;
+    
+    AlterModel *confirmModel = [[AlterModel alloc] init];
+    confirmModel.title = @"确定";
+    confirmModel.tag = 0;
+    
+    [self showAlter:@"退出当前账号" message:nil actionModel:@[cancelModel, confirmModel] callBack:^(AlterModel * _Nonnull model) {
+        if (model.tag == 0) {//注销账号
+            [DataManager logoutWithCallBack:^(NSInteger resultCode, id object, NSString *errMsg) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [UIApplication sharedApplication].delegate.window.rootViewController = [[LoginController alloc] init];
+                    
+                });
+            }];
+        }
+    }];
 }
-*/
+
 
 @end

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (Extend)
 
 + (instancetype)loadFromXib;
+- (void)showToast:(NSString *)hint hideAfterSeconds:(CGFloat)seconds;
 
 @end
 
